@@ -1,1 +1,0 @@
-['metric', 'rolling_mean', 'rolling_std', 'trend', 'seasonal', 'quantile_25', 'quantile_75']

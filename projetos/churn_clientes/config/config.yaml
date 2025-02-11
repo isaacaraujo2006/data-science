@@ -1,0 +1,30 @@
+# Configuração Inicial do Projeto de Análise de Compartilhamento de Viagem
+
+paths:
+  config_dir: 'C:/Github/data-science/projetos/churn_clientes/config/config.yaml'
+  logs_dir: 'C:/Github/data-science/projetos/churn_clientes/logs/'
+  notebook_dir: 'C:/Github/data-science/projetos/churn_clientes/notebook/'
+  src_dir: 'C:/Github/data-science/projetos/churn_clientes/src/'
+
+models:
+  directory: 'C:/Github/data-science/projetos/churn_clientes/models'
+  scaler: 'C:/Github/data-science/projetos/churn_clientes/models/scaler.joblib'
+  final_model: 'C:/Github/data-science/projetos/churn_clientes/models/final_model.joblib'
+
+preprocessors:
+  path: 'C:/Github/data-science/projetos/churn_clientes/preprocessors/preprocessor.joblib'
+
+data:
+  raw: 'C:/Github/data-science/projetos/churn_clientes/data/raw/churn_clientes.csv'
+  processed: 'C:/Github/data-science/projetos/churn_clientes/data/processed/processado.parquet'
+
+reports:
+  directory: 'C:/Github/data-science/projetos/churn_clientes/reports'
+  figures_dir: 'C:/Github/data-science/projetos/churn_clientes/reports/figures'
+
+metrics:
+  directory: 'C:/Github/data-science/projetos/churn_clientes/metrics'
+
+# Requisitos do Ambiente
+python:
+  version: '3.8'

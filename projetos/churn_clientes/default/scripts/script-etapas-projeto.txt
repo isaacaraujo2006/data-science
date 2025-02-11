@@ -1,0 +1,235 @@
+Projeto: Churn de Clientes
+
+1- 	Verificar necessidade do cliente
+
+2- 	Documentar necessidade do cliente envia-lo para provação
+
+3- 	Com a aprovação, baixar dataset ou acessar os dados
+
+4- 	Copiar o dataset ou dados para pasta (Data/Raw) 
+
+5- 	Corrigir (config/config.yaml) 
+
+6-	Importar Dataset em:"C:\Github\data-science\projetos\churn_clientes\data\raw\churn_clientes.csv". Utilizando linguagem Python, considerando meu config.yaml: # Configuração Inicial do Projeto de Análise de Compartilhamento de Viagem
+
+paths:
+  config_dir: 'C:/Github/data-science/projetos/churn_clientes/config/config.yaml'
+  logs_dir: 'C:/Github/data-science/projetos/churn_clientes/logs/'
+  notebook_dir: 'C:/Github/data-science/projetos/churn_clientes/notebook/'
+  src_dir: 'C:/Github/data-science/projetos/churn_clientes/src/'
+
+models:
+  directory: 'C:/Github/data-science/projetos/churn_clientes/models'
+  scaler: 'C:/Github/data-science/projetos/churn_clientes/models/scaler.joblib'
+  final_model: 'C:/Github/data-science/projetos/churn_clientes/models/final_model.joblib'
+
+preprocessors:
+  path: 'C:/Github/data-science/projetos/churn_clientes/preprocessors/preprocessor.joblib'
+
+data:
+  raw: 'C:/Github/data-science/projetos/churn_clientes/data/raw/churn_clientes.csv'
+  processed: 'C:/Github/data-science/projetos/churn_clientes/data/processed/processado.parquet'
+
+reports:
+  directory: 'C:/Github/data-science/projetos/churn_clientes/reports'
+  figures_dir: 'C:/Github/data-science/projetos/churn_clientes/reports/figures'
+
+metrics:
+  directory: 'C:/Github/data-science/projetos/churn_clientes/metrics'
+
+# Requisitos do Ambiente
+python:
+  version: '3.8'.
+
+E informe o número de linhas importadas e nome de colunas com seus respectivos tipos.
+
+7- Traduzir nome de colunas e verificar se os tipos de dados estão corretos de cada coluna. (sem letra maiuscula e sem espaço)
+
+8- Considerando meu projeto de churn de clientes, detalhe a nivel senior todas as etapas do meu projeto com o mais detalhe possivel.
+
+Fase 1: Definição e Planejamento do Projeto
+
+Identificação das Necessidades do Cliente:
+	-Reunir-se com o cliente para entender os objetivos e requisitos do projeto.
+	-Documentar as necessidades específicas, como métricas de sucesso e possíveis ações baseadas nas previsões de churn.
+	-Aprovação do cliente sobre as necessidades e escopo do projeto.
+
+Documentação e Aprovação:
+	-Elaborar um documento de escopo detalhado que inclua todas as etapas do projeto, responsabilidades e cronograma.
+	-Enviar o documento para aprovação do cliente.
+	-Incorporar feedback e obter a aprovação final.
+
+Fase 2: Coleta e Preparação dos Dados
+
+Acesso e Download dos Dados:
+	-Baixar o dataset ou acessar os dados diretamente do banco de dados ou de uma API.
+	-Certificar-se de que os dados estão completos e atualizados.
+
+Armazenamento dos Dados:
+	-Copiar o dataset para o diretório específico, Data/Raw.
+	-Garantir uma estrutura de diretórios organizada para facilitar o acesso e o gerenciamento dos dados.
+	-Configuração do Projeto:
+	-Revisar e corrigir o arquivo config.yaml com os caminhos corretos dos diretórios e arquivos.
+	-Configurar o ambiente Python, incluindo a criação de um ambiente virtual e a instalação das bibliotecas necessárias.
+
+Fase 3: Exploração e Limpeza dos Dados
+Importação e Análise Inicial:
+	-Importar o dataset para um DataFrame do Pandas.
+	-Realizar uma análise inicial para entender a estrutura e as características dos dados.
+	-Verificar o número de linhas importadas e os tipos de dados das colunas.
+
+Limpeza dos Dados:
+
+----------
+9- Considerando meu programa pipeline.py: 
+
+import yaml
+import pandas as pd
+
+# Caminho do arquivo de configuração
+config_path = r'C:/Github/data-science/projetos/churn_clientes/config/config.yaml'
+
+# Carregar o arquivo YAML
+with open(config_path, 'r', encoding='utf-8') as file:
+    config = yaml.safe_load(file)
+
+# Obter o caminho do dataset
+dataset_path = config['data']['raw']
+
+# Carregar os dados
+df = pd.read_csv(dataset_path)
+
+# Dicionário de tradução dos nomes das colunas
+traducao_colunas = {
+    'CustomerID': 'id_cliente',
+    'Age': 'idade',
+    'Gender': 'genero',
+    'Tenure': 'tempo_de_assinatura',
+    'Usage Frequency': 'frequencia_uso',
+    'Support Calls': 'chamadas_suporte',
+    'Payment Delay': 'atraso_pagamento',
+    'Subscription Type': 'tipo_assinatura',
+    'Contract Length': 'duracao_contrato',
+    'Total Spend': 'gasto_total',
+    'Last Interaction': 'ultima_interacao',
+    'Churn': 'churn'
+}
+
+# Traduzindo os nomes das colunas
+df.rename(columns=traducao_colunas, inplace=True)
+
+# Verificando se os tipos de dados estão corretos
+colunas_tipos_corrigidos = {
+    'id_cliente': 'float64',
+    'idade': 'float64',
+    'genero': 'object',
+    'tempo_de_assinatura': 'float64',
+    'frequencia_uso': 'float64',
+    'chamadas_suporte': 'float64',
+    'atraso_pagamento': 'float64',
+    'tipo_assinatura': 'object',
+    'duracao_contrato': 'object',
+    'gasto_total': 'float64',
+    'ultima_interacao': 'float64',
+    'churn': 'float64'
+}
+
+# Corrigindo tipos de dados, se necessário
+for coluna, tipo in colunas_tipos_corrigidos.items():
+    if df[coluna].dtype != tipo:
+        df[coluna] = df[coluna].astype(tipo)
+
+# Exibir informações sobre o dataset
+num_linhas = df.shape[0]
+colunas_tipos = df.dtypes
+
+print(f"Número de linhas importadas: {num_linhas}\n")
+print("Nome das colunas e seus tipos:")
+print(colunas_tipos)
+
+
+informe o numero de linhas por coluna que possuem: dados duplicados, dados faltantes, dados fora do intervalo esperado e outliers. Informe o percentual em relação ao numero de linhas importadas no inicio
+
+---------
+
+10- Tratar valores faltantes, valores fora do intervalo esperado, duplicados, outliers e informar relatorio validando.
+	-Verificar a consistência dos dados e corrigir quaisquer erros identificados.
+	-Normalizar e padronizar os dados para análises posteriores.
+
+	salvar dataset em arquivo processed.csv e processed.parquet em diretório: C:\Github\data-science\projetos\churn_clientes\data\processed\
+
+Fase 4: Análise Exploratória dos Dados (EDA)
+Análise Estatística Descritiva:
+
+Gerar estatísticas descritivas das variáveis numéricas e categóricas.
+
+Visualizar a distribuição dos dados e identificar padrões ou anomalias.
+
+Análise de Churn:
+
+Calcular a taxa de churn e analisar os fatores que podem influenciar o churn.
+
+Comparar as características dos clientes que cancelaram com os que não cancelaram.
+
+Geração de Gráficos:
+
+Criar visualizações para explorar a relação entre diferentes variáveis e o churn.
+
+Exemplos de gráficos incluem histogramas, boxplots, scatter plots e gráficos de barras.
+
+Fase 5: Modelagem e Predição
+Preparação dos Dados para Modelagem:
+
+Dividir os dados em conjuntos de treinamento e teste.
+
+Aplicar técnicas de engenharia de features para criar novas variáveis preditivas.
+
+Normalizar e padronizar os dados, se necessário.
+
+Seleção e Treinamento de Modelos:
+
+Experimentar com diferentes algoritmos de machine learning, como regressão logística, árvores de decisão, florestas aleatórias e redes neurais.
+
+Avaliar o desempenho dos modelos usando métricas apropriadas, como acurácia, precisão, recall e AUC-ROC.
+
+Selecionar o melhor modelo com base no desempenho nos dados de validação.
+
+Validação e Ajuste dos Modelos:
+
+Realizar validação cruzada para garantir a robustez do modelo.
+
+Ajustar hiperparâmetros usando técnicas como grid search ou random search.
+
+Comparar os resultados e refinar o modelo final.
+
+Fase 6: Implementação e Monitoramento
+Implementação do Modelo:
+
+Salvar o modelo treinado e os pré-processadores em arquivos.
+
+Implementar o modelo em produção, integrando-o aos sistemas existentes do cliente.
+
+Criar um pipeline de predição automatizado para processar novos dados e gerar previsões de churn regularmente.
+
+Monitoramento e Manutenção:
+
+Configurar monitoramento contínuo para acompanhar o desempenho do modelo em produção.
+
+Atualizar e re-treinar o modelo periodicamente com novos dados para manter a precisão das previsões.
+
+Documentar todas as etapas e decisões tomadas ao longo do projeto para facilitar futuras manutenções e melhorias.
+
+Fase 7: Relatórios e Comunicação
+Geração de Relatórios:
+
+Criar relatórios detalhados que incluam insights, visualizações e recomendações baseadas nas análises e predições.
+
+Incluir gráficos que ilustrem as principais descobertas e os fatores que influenciam o churn.
+
+Apresentação ao Cliente:
+
+Apresentar os resultados e as recomendações ao cliente de forma clara e concisa.
+
+Discutir as possíveis ações a serem tomadas com base nas predições de churn e como elas podem impactar os negócios.
+
+Fornecer documentação e treinamento para que o cliente possa utilizar e interpretar os resultados do modelo.
