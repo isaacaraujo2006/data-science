@@ -1,0 +1,59 @@
+### Regressão Logística ###
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98     38143
+           1       0.98      0.98      0.98     50024
+
+    accuracy                           0.98     88167
+   macro avg       0.98      0.98      0.98     88167
+weighted avg       0.98      0.98      0.98     88167
+
+
+Acurácia: 0.98
+AUC-ROC: 1.00
+
+### Regressão Logística Otimizada ###
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98     38143
+           1       0.98      0.98      0.98     50024
+
+    accuracy                           0.98     88167
+   macro avg       0.98      0.98      0.98     88167
+weighted avg       0.98      0.98      0.98     88167
+
+
+Acurácia: 0.98
+AUC-ROC: 1.00
+
+### Validação Cruzada ###
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98    152690
+           1       0.98      0.98      0.98    199976
+
+    accuracy                           0.98    352666
+   macro avg       0.98      0.98      0.98    352666
+weighted avg       0.98      0.98      0.98    352666
+
+
+Acurácia: 0.98
+AUC-ROC: 1.00
+
+### Melhor Threshold ###
+
+              precision    recall  f1-score   support
+
+           0       0.98      0.97      0.98     38143
+           1       0.98      0.99      0.98     50024
+
+    accuracy                           0.98     88167
+   macro avg       0.98      0.98      0.98     88167
+weighted avg       0.98      0.98      0.98     88167
+
+
+Acurácia: 0.98
+AUC-ROC: 1.00

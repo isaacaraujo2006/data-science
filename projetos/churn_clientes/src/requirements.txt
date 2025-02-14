@@ -9,6 +9,8 @@
 #click>=8.0.1,<9.0
 #cmake==3.25.0
 #cython>=0.29.21,<0.30
+dash-bootstrap-components==1.6.1rc1
+dash-uploader==0.7.0a1
 #dask[dataframe]>=2021.9.1
 #dask-ml>=2022.1.1,<2023.0
 #dlib==19.24.6

@@ -5,6 +5,7 @@ paths:
   logs_dir: 'C:/Github/data-science/projetos/churn_clientes/logs/'
   notebook_dir: 'C:/Github/data-science/projetos/churn_clientes/notebook/'
   src_dir: 'C:/Github/data-science/projetos/churn_clientes/src/'
+  figures_dir: 'C:/Github/data-science/projetos/churn_clientes/reports/figures'
 
 models:
   directory: 'C:/Github/data-science/projetos/churn_clientes/models'
@@ -16,11 +17,10 @@ preprocessors:
 
 data:
   raw: 'C:/Github/data-science/projetos/churn_clientes/data/raw/churn_clientes.csv'
-  processed: 'C:/Github/data-science/projetos/churn_clientes/data/processed/processado.parquet'
+  processed: 'C:/Github/data-science/projetos/churn_clientes/data/processed/processed.parquet'
 
 reports:
   directory: 'C:/Github/data-science/projetos/churn_clientes/reports'
-  figures_dir: 'C:/Github/data-science/projetos/churn_clientes/reports/figures'
 
 metrics:
   directory: 'C:/Github/data-science/projetos/churn_clientes/metrics'

@@ -1,0 +1,130 @@
+2025-02-14 12:17:49,513 - INFO - Carregando dados
+2025-02-14 12:17:50,215 - INFO - Dados carregados, pré-processados e scaler salvo.
+2025-02-14 12:17:51,186 - INFO - 
+### Regressão Logística ###
+
+2025-02-14 12:17:51,186 - INFO -               precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98     38143
+           1       0.98      0.98      0.98     50024
+
+    accuracy                           0.98     88167
+   macro avg       0.98      0.98      0.98     88167
+weighted avg       0.98      0.98      0.98     88167
+
+2025-02-14 12:17:51,186 - INFO - Acurácia: 0.98
+2025-02-14 12:17:51,186 - INFO - AUC-ROC: 1.00
+2025-02-14 12:18:36,715 - INFO - 
+### Melhor Modelo: Regressão Logística com Grid Search ###
+
+2025-02-14 12:18:36,715 - INFO - Melhores Parâmetros: {'C': 0.1, 'penalty': 'l1', 'solver': 'liblinear'}
+2025-02-14 12:18:39,220 - INFO - 
+### Regressão Logística Otimizada ###
+
+2025-02-14 12:18:39,220 - INFO -               precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98     38143
+           1       0.98      0.98      0.98     50024
+
+    accuracy                           0.98     88167
+   macro avg       0.98      0.98      0.98     88167
+weighted avg       0.98      0.98      0.98     88167
+
+2025-02-14 12:18:39,220 - INFO - Acurácia: 0.98
+2025-02-14 12:18:39,220 - INFO - AUC-ROC: 1.00
+2025-02-14 12:18:39,220 - INFO - Modelo treinado, otimizado e salvo.
+2025-02-14 12:18:47,065 - INFO - 
+### Validação Cruzada ###
+
+2025-02-14 12:18:47,065 - INFO -               precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98    152690
+           1       0.98      0.98      0.98    199976
+
+    accuracy                           0.98    352666
+   macro avg       0.98      0.98      0.98    352666
+weighted avg       0.98      0.98      0.98    352666
+
+2025-02-14 12:18:47,065 - INFO - Acurácia: 0.98
+2025-02-14 12:18:47,065 - INFO - AUC-ROC: 1.00
+2025-02-14 12:18:47,262 - INFO - 
+### Melhor Threshold ###
+
+2025-02-14 12:18:47,262 - INFO - Melhor Threshold: 0.39
+2025-02-14 12:18:47,262 - INFO -               precision    recall  f1-score   support
+
+           0       0.98      0.97      0.98     38143
+           1       0.98      0.99      0.98     50024
+
+    accuracy                           0.98     88167
+   macro avg       0.98      0.98      0.98     88167
+weighted avg       0.98      0.98      0.98     88167
+
+2025-02-14 12:18:47,262 - INFO - Acurácia: 0.98
+2025-02-14 12:18:47,262 - INFO - AUC-ROC: 1.00
+2025-02-14 12:18:47,267 - INFO - Validação cruzada, ajuste de threshold e salvamento das métricas concluídos.
+2025-02-14 12:22:04,676 - INFO - Carregando dados
+2025-02-14 12:22:05,263 - INFO - Dados carregados, pré-processados e scaler salvo.
+2025-02-14 12:22:06,114 - INFO - 
+### Regressão Logística ###
+
+2025-02-14 12:22:06,114 - INFO -               precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98     38143
+           1       0.98      0.98      0.98     50024
+
+    accuracy                           0.98     88167
+   macro avg       0.98      0.98      0.98     88167
+weighted avg       0.98      0.98      0.98     88167
+
+2025-02-14 12:22:06,114 - INFO - Acurácia: 0.98
+2025-02-14 12:22:06,114 - INFO - AUC-ROC: 1.00
+2025-02-14 12:22:50,905 - INFO - 
+### Melhor Modelo: Regressão Logística com Grid Search ###
+
+2025-02-14 12:22:50,905 - INFO - Melhores Parâmetros: {'C': 0.1, 'penalty': 'l1', 'solver': 'liblinear'}
+2025-02-14 12:22:53,338 - INFO - 
+### Regressão Logística Otimizada ###
+
+2025-02-14 12:22:53,338 - INFO -               precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98     38143
+           1       0.98      0.98      0.98     50024
+
+    accuracy                           0.98     88167
+   macro avg       0.98      0.98      0.98     88167
+weighted avg       0.98      0.98      0.98     88167
+
+2025-02-14 12:22:53,338 - INFO - Acurácia: 0.98
+2025-02-14 12:22:53,338 - INFO - AUC-ROC: 1.00
+2025-02-14 12:22:53,338 - INFO - Modelo treinado, otimizado e salvo.
+2025-02-14 12:23:01,077 - INFO - 
+### Validação Cruzada ###
+
+2025-02-14 12:23:01,077 - INFO -               precision    recall  f1-score   support
+
+           0       0.98      0.98      0.98    152690
+           1       0.98      0.98      0.98    199976
+
+    accuracy                           0.98    352666
+   macro avg       0.98      0.98      0.98    352666
+weighted avg       0.98      0.98      0.98    352666
+
+2025-02-14 12:23:01,077 - INFO - Acurácia: 0.98
+2025-02-14 12:23:01,077 - INFO - AUC-ROC: 1.00
+2025-02-14 12:23:01,257 - INFO - 
+### Melhor Threshold ###
+
+2025-02-14 12:23:01,257 - INFO - Melhor Threshold: 0.39
+2025-02-14 12:23:01,257 - INFO -               precision    recall  f1-score   support
+
+           0       0.98      0.97      0.98     38143
+           1       0.98      0.99      0.98     50024
+
+    accuracy                           0.98     88167
+   macro avg       0.98      0.98      0.98     88167
+weighted avg       0.98      0.98      0.98     88167
+
+2025-02-14 12:23:01,257 - INFO - Acurácia: 0.98
+2025-02-14 12:23:01,257 - INFO - AUC-ROC: 1.00
+2025-02-14 12:23:01,257 - INFO - Validação cruzada, ajuste de threshold e salvamento das métricas concluídos.
