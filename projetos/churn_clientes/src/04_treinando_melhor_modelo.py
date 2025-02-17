@@ -42,6 +42,11 @@ df = pd.get_dummies(df, drop_first=True)
 # Garantir que a coluna 'churn' esteja binária {0, 1}
 df['churn'] = df['churn'].apply(lambda x: 1 if x > 0 else 0)
 
+# Listar todas as features
+features = df.drop('churn', axis=1).columns.tolist()
+logging.info(f"Features disponíveis: {features}")
+print("Features disponíveis:", features)
+
 # Separar features e alvo
 X = df.drop('churn', axis=1)
 y = df['churn']
@@ -55,19 +60,23 @@ X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
 # Salvar o scaler
-scaler_path = config['preprocessors']['path']
-if not os.path.exists(scaler_path):
-    os.makedirs(scaler_path)
-joblib.dump(scaler, os.path.join(scaler_path, 'scaler.joblib'))
+scaler_path = config['preprocessors']['scaler_path']
+if not os.path.exists(os.path.dirname(scaler_path)):
+    os.makedirs(os.path.dirname(scaler_path))
+joblib.dump(scaler, scaler_path)
 
-logging.info('Dados carregados, pré-processados e scaler salvo.')
+# Salvar o preprocessador
+preprocessor_path = config['preprocessors']['preprocessor_path']
+if not os.path.exists(os.path.dirname(preprocessor_path)):
+    os.makedirs(os.path.dirname(preprocessor_path))
+joblib.dump(scaler, preprocessor_path)  # Aqui você deve salvar o objeto preprocessador (como o scaler)
+
+logging.info('Dados carregados, pré-processados, scaler e preprocessador salvos.')
 print("### Etapa 1 Concluída: Carregamento e Pré-processamento dos Dados ###")
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import GridSearchCV, cross_val_predict
 from sklearn.metrics import classification_report, roc_auc_score, accuracy_score
-import joblib
-import logging
 
 # Função para treinar e avaliar o modelo
 def avaliar_modelo(modelo, X_train, X_test, y_train, y_test, nome_modelo):

@@ -76,7 +76,7 @@ scikit-optimize>=0.10.2,<0.11.0
 #smart-open>=6.0.0
 #spacy>=3.0.0,<4.0
 #statsmodels==0.13.5
-#streamlit
+streamlit
 #symspellpy>=6.7.8
 #tensorflow>=2.8.0,<2.9.0
 #tensorflow-estimator>=2.8.0,<2.9.0

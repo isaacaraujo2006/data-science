@@ -1,7 +1,6 @@
 import yaml
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import StandardScaler
 import os
 import time
 
@@ -96,11 +95,7 @@ for coluna in df.select_dtypes(include=[np.number]).columns:
 percentual_outliers = {coluna: (count / num_linhas) * 100 for coluna, count in outliers.items()}
 percentual_total_outliers = sum(outliers.values()) / num_linhas * 100
 
-# 9. Normalizar e padronizar os dados
-scaler = StandardScaler()
-df[df.select_dtypes(include=[np.number]).columns] = scaler.fit_transform(df.select_dtypes(include=[np.number]).values)
-
-# 10. Caminho correto dos arquivos de saída
+# 9. Caminho correto dos arquivos de saída
 processed_dir = os.path.dirname(config['data']['processed'])
 csv_path = os.path.join(processed_dir, "processed.csv")
 parquet_path = os.path.join(processed_dir, "processed.parquet")
@@ -109,7 +104,7 @@ parquet_path = os.path.join(processed_dir, "processed.parquet")
 if not os.path.exists(processed_dir):
     os.makedirs(processed_dir)
 
-# 11. Salvar os arquivos
+# 10. Salvar os arquivos
 df.to_csv(csv_path, index=False)
 df.to_parquet(parquet_path, index=False)
 
