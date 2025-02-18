@@ -1,127 +1,102 @@
-import yaml
 import pandas as pd
+import yaml
 import numpy as np
-import os
-import time
 
-# Iniciar contagem do tempo de processamento
-inicio_tempo = time.time()
-
-# Caminho do arquivo de configuração
-config_path = r'C:/Github/data-science/projetos/churn_clientes/config/config.yaml'
-
-# Carregar o arquivo YAML
-with open(config_path, 'r', encoding='utf-8') as file:
+# Carregar o arquivo de configuração (config.yaml)
+with open('C:/Github/data-science/projetos/churn_clientes/config/config.yaml', 'r') as file:
     config = yaml.safe_load(file)
 
-# Obter o caminho do dataset
-dataset_path = config['data']['raw']
+# Caminho para o arquivo de dados
+data_path = config['data']['raw']
 
-# Carregar os dados
-df = pd.read_csv(dataset_path)
+# Importar o dataset
+df = pd.read_csv(data_path)
 
-# Dicionário de tradução dos nomes das colunas
-traducao_colunas = {
-    'CustomerID': 'id_cliente',
-    'Age': 'idade',
-    'Gender': 'genero',
-    'Tenure': 'tempo_de_assinatura',
-    'Usage Frequency': 'frequencia_uso',
-    'Support Calls': 'chamadas_suporte',
-    'Payment Delay': 'atraso_pagamento',
-    'Subscription Type': 'tipo_assinatura',
-    'Contract Length': 'duracao_contrato',
-    'Total Spend': 'gasto_total',
-    'Last Interaction': 'ultima_interacao',
-    'Churn': 'churn'
+# Traduzir o nome das colunas (sem maiúsculas e sem espaços)
+df.columns = df.columns.str.lower().str.replace(' ', '_')
+
+# Exibir as primeiras linhas para visualizar as mudanças
+print(df.head())
+
+# Verificar tipos de dados das colunas
+current_dtypes = df.dtypes
+
+# Esperados tipos de dados (baseado nas colunas)
+expected_dtypes = {
+    'rownumber': 'int64',
+    'customerid': 'int64',
+    'surname': 'object',
+    'creditscore': 'int64',
+    'geography': 'object',
+    'gender': 'object',
+    'age': 'int64',
+    'tenure': 'int64',
+    'balance': 'float64',
+    'numofproducts': 'int64',
+    'hascrcard': 'int64',
+    'isactivemember': 'int64',
+    'estimatedsalary': 'float64',
+    'exited': 'int64',
 }
 
-# Traduzindo os nomes das colunas
-df.rename(columns=traducao_colunas, inplace=True)
+# Verificando se os tipos de dados estão corretos
+for column, expected_type in expected_dtypes.items():
+    if column in current_dtypes:
+        if current_dtypes[column] != expected_type:
+            print(f'A coluna "{column}" tem o tipo de dado {current_dtypes[column]}, mas deveria ser {expected_type}.')
+        else:
+            print(f'A coluna "{column}" está com o tipo de dado correto: {expected_type}.')
+    else:
+        print(f'A coluna "{column}" não foi encontrada no dataset.')
 
-# Número total de linhas
-num_linhas = df.shape[0]
+# Calcular o IQR para identificar os outliers em colunas contínuas
+def remove_outliers_iqr(df, cols):
+    for col in cols:
+        Q1 = df[col].quantile(0.25)
+        Q3 = df[col].quantile(0.75)
+        IQR = Q3 - Q1
+        lower_bound = Q1 - 1.5 * IQR
+        upper_bound = Q3 + 1.5 * IQR
+        
+        # Remover os outliers fora dos limites de IQR
+        df = df[(df[col] >= lower_bound) & (df[col] <= upper_bound)]
+    return df
 
-# 1. Verificar dados duplicados
-num_duplicados = df.duplicated().sum()
-percentual_duplicados = (num_duplicados / num_linhas) * 100
+# Aplicar a função de remoção de outliers
+outlier_columns = ['creditscore', 'age', 'balance', 'numofproducts', 'estimatedsalary']
+df_cleaned = remove_outliers_iqr(df, outlier_columns)
 
-# 2. Verificar dados faltantes
-num_faltantes = df.isnull().sum().sum()
-percentual_faltantes = (num_faltantes / (num_linhas * df.shape[1])) * 100
+# Verificar o número de linhas após o tratamento dos outliers
+print(f"Linhas após tratamento de outliers: {len(df_cleaned)}")
 
-# 3. Definir intervalos esperados
-intervalos_esperados = {
-    'idade': (0, 120),
-    'tempo_de_assinatura': (0, 240),
-    'frequencia_uso': (0, 100),
-    'gasto_total': (0, 50000),
-    'ultima_interacao': (0, 100),
-    'churn': (0, 1)
-}
+# Verificar se o número de linhas diminuiu devido à remoção dos outliers
+print(f"Total de linhas removidas: {len(df) - len(df_cleaned)}")
 
-# 4. Identificar valores fora do intervalo esperado
-fora_intervalo = {}
-for coluna, (min_val, max_val) in intervalos_esperados.items():
-    fora_intervalo[coluna] = df[(df[coluna] < min_val) | (df[coluna] > max_val)].shape[0]
+# Verificar a distribuição das colunas após o tratamento
+print(df_cleaned.describe())
 
-# Percentual de dados fora do intervalo
-percentual_fora_intervalo = {coluna: (count / num_linhas) * 100 for coluna, count in fora_intervalo.items()}
-percentual_total_fora_intervalo = sum(fora_intervalo.values()) / num_linhas * 100
+# Exibir as primeiras linhas do dataset limpo
+print(df_cleaned.head())
 
-# 5. Ajustar valores fora do intervalo
-num_linhas_antes = df.shape[0]
-for coluna, (min_val, max_val) in intervalos_esperados.items():
-    df[coluna] = df[coluna].clip(lower=min_val, upper=max_val)
-num_linhas_corrigidas = num_linhas_antes - df.shape[0]
+# Verificar novamente os tipos de dados das colunas
+current_dtypes_cleaned = df_cleaned.dtypes
+for column, expected_type in expected_dtypes.items():
+    if column in current_dtypes_cleaned:
+        if current_dtypes_cleaned[column] != expected_type:
+            print(f'A coluna "{column}" tem o tipo de dado {current_dtypes_cleaned[column]}, mas deveria ser {expected_type}.')
+        else:
+            print(f'A coluna "{column}" está com o tipo de dado correto: {expected_type}.')
+    else:
+        print(f'A coluna "{column}" não foi encontrada no dataset.')
 
-# 6. Remover dados duplicados
-df.drop_duplicates(inplace=True)
+# Definir o caminho para salvar os arquivos processados
+processed_csv_path = 'C:/Github/data-science/projetos/churn_clientes/data/processed/processed.csv'
+processed_parquet_path = 'C:/Github/data-science/projetos/churn_clientes/data/processed/processed.parquet'
 
-# 7. Preencher dados faltantes com a mediana
-df.fillna(df.select_dtypes(include=[np.number]).median(), inplace=True)
+# Salvar o dataset limpo como arquivo CSV
+df_cleaned.to_csv(processed_csv_path, index=False)
+print(f"Dataset salvo como CSV em: {processed_csv_path}")
 
-# 8. Identificar e remover outliers (IQR)
-outliers = {}
-for coluna in df.select_dtypes(include=[np.number]).columns:
-    Q1 = df[coluna].quantile(0.25)
-    Q3 = df[coluna].quantile(0.75)
-    IQR = Q3 - Q1
-    outlier_threshold_min = Q1 - 1.5 * IQR
-    outlier_threshold_max = Q3 + 1.5 * IQR
-    outliers[coluna] = df[(df[coluna] < outlier_threshold_min) | (df[coluna] > outlier_threshold_max)].shape[0]
-
-# Percentual de outliers
-percentual_outliers = {coluna: (count / num_linhas) * 100 for coluna, count in outliers.items()}
-percentual_total_outliers = sum(outliers.values()) / num_linhas * 100
-
-# 9. Caminho correto dos arquivos de saída
-processed_dir = os.path.dirname(config['data']['processed'])
-csv_path = os.path.join(processed_dir, "processed.csv")
-parquet_path = os.path.join(processed_dir, "processed.parquet")
-
-# Criar diretório se não existir
-if not os.path.exists(processed_dir):
-    os.makedirs(processed_dir)
-
-# 10. Salvar os arquivos
-df.to_csv(csv_path, index=False)
-df.to_parquet(parquet_path, index=False)
-
-# Relatório final de qualidade dos dados
-print("\n### RELATÓRIO FINAL ###\n")
-print(f"Número total de linhas: {num_linhas}")
-print(f"Percentual de Dados Duplicados: {percentual_duplicados:.2f}%")
-print(f"Percentual de Dados Faltantes: {percentual_faltantes:.2f}%")
-print(f"Percentual de Dados Fora do Intervalo Esperado: {percentual_total_fora_intervalo:.2f}%")
-print(f"Percentual de Outliers: {percentual_total_outliers:.2f}%")
-print(f"Número de linhas corrigidas: {num_linhas_corrigidas}")
-
-# Tempo de processamento
-tempo_processamento = time.time() - inicio_tempo
-print(f"Tempo de processamento: {tempo_processamento:.2f} segundos")
-
-print("\nArquivos salvos com sucesso:")
-print(f"  - CSV: {csv_path}")
-print(f"  - Parquet: {parquet_path}")
-print("\nProcessamento concluído!\n")
+# Salvar o dataset limpo como arquivo Parquet
+df_cleaned.to_parquet(processed_parquet_path, index=False)
+print(f"Dataset salvo como Parquet em: {processed_parquet_path}")
