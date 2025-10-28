@@ -1,0 +1,15 @@
+2025-07-29 12:37:20,877 - Melhores hiperparâmetros: {'histgb__min_samples_leaf': 50, 'histgb__max_leaf_nodes': 31, 'histgb__max_iter': 300, 'histgb__max_depth': None, 'histgb__learning_rate': 0.1, 'histgb__l2_regularization': 0.5}
+2025-07-29 12:37:26,452 - Relatório de Classificação:
+              precision    recall  f1-score       support
+0              0.999541  0.999982  0.999762  56651.000000
+1              0.985714  0.726316  0.836364     95.000000
+accuracy       0.999524  0.999524  0.999524      0.999524
+macro avg      0.992628  0.863149  0.918063  56746.000000
+weighted avg   0.999518  0.999524  0.999488  56746.000000
+2025-07-29 12:37:26,452 - AUC-PR: 0.8252
+2025-07-29 12:37:26,452 - Matriz de Confusão:
+[[56650     1]
+ [   26    69]]
+2025-07-29 12:37:26,453 - Custo total: 261
+2025-07-29 12:37:32,067 - F1 Score médio (cross_val): 0.8270
+2025-07-29 12:37:46,905 - Tempo total: 0h 4min 21s

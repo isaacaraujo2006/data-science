@@ -1,0 +1,50 @@
+{
+  "pipeline_version": "20251007_132148",
+  "target": "payment_value_sum",
+  "cutoff_date": "2018-05-24 10:08:31",
+  "metrics_full": {
+    "RMSE": 5.18853591498829,
+    "MAE": 2.527836764588638,
+    "R2": 0.9976207440786719,
+    "MAPE": 1.759973466562452,
+    "MdAPE": 1.1560024850079735,
+    "ErrP90": 5.778124779502463
+  },
+  "metrics_dyn": {
+    "RMSE": 5.18853591498829,
+    "MAE": 2.527836764588638,
+    "R2": 0.9976207440786719,
+    "MAPE": 1.759973466562452,
+    "MdAPE": 1.1560024850079735,
+    "ErrP90": 5.778124779502463
+  },
+  "data_hash": "8c79f7598e4b963e4d69409a946b8de9",
+  "drift": {
+    "mean_abs_diff": 0.0,
+    "corr": 1.0
+  },
+  "top_shap_full": {
+    "feat_freight_vs_ticket": 0.2625570353942638,
+    "feat_customer_avg_ticket": 0.19792816801467292,
+    "freight_value": 0.09228240456350409,
+    "freight_value_log": 0.07711413970437887,
+    "price_log": 0.06043198085371207,
+    "price": 0.04891853299693301,
+    "feat_price_vs_cat_mean": 0.03681969864901647,
+    "feat_freight_ratio": 0.0193607308457393,
+    "feat_price_per_volume": 0.004016436924057156,
+    "product_weight_g_log": 0.003959622792289585,
+    "product_category_name": 0.0039376219872414,
+    "product_weight_g": 0.00377022961857597,
+    "product_category_name_english": 0.0034444945653625673,
+    "customer_state": 0.0031110880174791094,
+    "product_volume_cm3_log": 0.002394746081258085,
+    "customer_zip_code_prefix": 0.0022661910316838486,
+    "payment_value_sum_lag1": 0.002229284452639968,
+    "payment_installments_max": 0.0020039614687544297,
+    "feat_customer_orders_count": 0.0017583902077623387,
+    "seller_city": 0.0017326976333637847
+  },
+  "top_shap_dyn": {},
+  "best_alpha": 0.0
+}

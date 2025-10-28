@@ -1,0 +1,46 @@
+{% extends 'previsao/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container fade-in">
+    <h2 class="section-title"> Previsão Manual</h2>
+
+    <form method="POST" class="predict-form">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="price">Preço do Produto (R$)</label>
+            <input type="number" step="0.01" name="price" id="price" required>
+        </div>
+
+        <div class="form-group">
+            <label for="freight_value">Valor do Frete (R$)</label>
+            <input type="number" step="0.01" name="freight_value" id="freight_value" required>
+        </div>
+
+        <div class="form-group">
+            <label for="product_weight_g">Peso (g)</label>
+            <input type="number" step="0.01" name="product_weight_g" id="product_weight_g" required>
+        </div>
+
+        <div class="form-group">
+            <label for="product_volume_cm3">Volume (cm³)</label>
+            <input type="number" step="0.01" name="product_volume_cm3" id="product_volume_cm3" required>
+        </div>
+
+        <button type="submit" class="btn-purple">Prever Demanda</button>
+    </form>
+
+    {% if prediction %}
+    {% if prediction %}
+    <div class="result-card">
+        <h3>📦 Demanda Prevista: <strong>{{ prediction }}</strong> unidades</h3>
+        {% if revenue %}
+            <p>💰 Faturamento Estimado: <strong>R$ {{ revenue }}</strong></p>
+        {% endif %}
+    </div>
+    {% endif %}    
+    
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

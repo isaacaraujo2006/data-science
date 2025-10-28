@@ -1,0 +1,43 @@
+# Configuração Inicial do Projeto de Churn de Clientes
+
+paths:
+  config_dir: "D:/github/data-science/projetos/fraude_financeira/config/config.yaml"
+  logs_dir: "D:/github/data-science/projetos/fraude_financeira/logs/"
+  notebook_dir: "D:/github/data-science/projetos/fraude_financeira/notebook/"
+  src_dir: "D:/github/data-science/projetos/fraude_financeira/src/"
+  figures_dir: "D:/github/data-science/projetos/fraude_financeira/reports/figures"
+
+models:
+  directory: "D:/github/data-science/projetos/fraude_financeira/models"
+  final_model: "D:/github/data-science/projetos/fraude_financeira/models/final_model.joblib"
+  versioned_models: "D:/github/data-science/projetos/fraude_financeira/models/versioned/"
+
+preprocessors:
+  preprocessor_path: "D:/github/data-science/projetos/fraude_financeira/preprocessors/preprocessor.joblib"
+  scaler_path: "D:/github/data-science/projetos/fraude_financeira/preprocessors/scaler.joblib"
+
+data:
+  raw: "D:/github/data-science/projetos/fraude_financeira/data/raw/full_dataset.parquet"
+  processed_csv: "D:/github/data-science/projetos/fraude_financeira/data/processed/processed.csv"
+  processed_parquet: "D:/github/data-science/projetos/fraude_financeira/data/processed/processed.parquet"
+
+logs:
+  file: "D:/github/data-science/projetos/fraude_financeira/logs/data_processing.log"
+
+reports:
+  figures: "D:/github/data-science/projetos/fraude_financeira/reports/figures/"
+
+metrics:
+  directory: "D:/github/data-science/projetos/fraude_financeira/metrics"
+
+explainability:
+  shap_values: "D:/github/data-science/projetos/fraude_financeira/reports/shap_values.csv"
+  shap_figures: "D:/github/data-science/projetos/fraude_financeira/reports/figures/shap_summary.png"
+
+thresholds:
+  optimal_threshold_path: "D:/github/data-science/projetos/fraude_financeira/models/optimal_threshold.txt"
+
+
+# Requisitos do Ambiente
+python:
+  version: "3.8"

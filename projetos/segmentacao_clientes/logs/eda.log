@@ -1,0 +1,202 @@
+2025-03-29 11:43:01,413 - INFO - Iniciando análise exploratória de dados (EDA).
+2025-03-29 11:43:01,426 - INFO - Número de linhas: 839 | Número de colunas: 29
+2025-03-29 11:43:01,426 - INFO - Tipos de dados registrados.
+2025-03-29 11:43:01,426 - INFO - Gerando estatísticas descritivas das variáveis numéricas.
+2025-03-29 11:43:01,523 - INFO - Gerando estatísticas descritivas das variáveis categóricas.
+2025-03-29 11:43:01,563 - INFO - Estatísticas descritivas salvas no diretório especificado.
+2025-03-29 11:43:01,563 - INFO - Iniciando a geração de gráficos.
+2025-03-29 11:43:03,583 - INFO - Gráfico de histograma salvo para a coluna: id
+2025-03-29 11:43:03,859 - INFO - Gráfico de histograma salvo para a coluna: ano_nascimento
+2025-03-29 11:43:04,110 - INFO - Gráfico de histograma salvo para a coluna: renda
+2025-03-29 11:43:04,401 - INFO - Gráfico de histograma salvo para a coluna: criancas_em_casa
+2025-03-29 11:43:04,654 - INFO - Gráfico de histograma salvo para a coluna: adolescentes_em_casa
+2025-03-29 11:43:04,927 - INFO - Gráfico de histograma salvo para a coluna: recencia
+2025-03-29 11:43:05,189 - INFO - Gráfico de histograma salvo para a coluna: gastos_vinhos
+2025-03-29 11:43:05,444 - INFO - Gráfico de histograma salvo para a coluna: gastos_frutas
+2025-03-29 11:43:05,688 - INFO - Gráfico de histograma salvo para a coluna: gastos_carnes
+2025-03-29 11:43:05,922 - INFO - Gráfico de histograma salvo para a coluna: gastos_peixes
+2025-03-29 11:43:06,157 - INFO - Gráfico de histograma salvo para a coluna: gastos_doces
+2025-03-29 11:43:06,414 - INFO - Gráfico de histograma salvo para a coluna: gastos_joias
+2025-03-29 11:43:06,663 - INFO - Gráfico de histograma salvo para a coluna: compras_promocao
+2025-03-29 11:43:06,917 - INFO - Gráfico de histograma salvo para a coluna: compras_web
+2025-03-29 11:43:07,184 - INFO - Gráfico de histograma salvo para a coluna: compras_catalogo
+2025-03-29 11:43:07,438 - INFO - Gráfico de histograma salvo para a coluna: compras_loja
+2025-03-29 11:43:07,725 - INFO - Gráfico de histograma salvo para a coluna: visitas_web_mes
+2025-03-29 11:43:08,041 - INFO - Gráfico de histograma salvo para a coluna: aceitou_campanha3
+2025-03-29 11:43:08,275 - INFO - Gráfico de histograma salvo para a coluna: aceitou_campanha4
+2025-03-29 11:43:08,517 - INFO - Gráfico de histograma salvo para a coluna: aceitou_campanha5
+2025-03-29 11:43:08,757 - INFO - Gráfico de histograma salvo para a coluna: aceitou_campanha1
+2025-03-29 11:43:08,984 - INFO - Gráfico de histograma salvo para a coluna: aceitou_campanha2
+2025-03-29 11:43:09,215 - INFO - Gráfico de histograma salvo para a coluna: reclamacao
+2025-03-29 11:43:09,484 - INFO - Gráfico de histograma salvo para a coluna: custo_contato
+2025-03-29 11:43:09,746 - INFO - Gráfico de histograma salvo para a coluna: receita
+2025-03-29 11:43:09,983 - INFO - Gráfico de histograma salvo para a coluna: resposta
+2025-03-29 11:43:10,152 - INFO - Gráfico de boxplot salvo para a coluna: id
+2025-03-29 11:43:10,320 - INFO - Gráfico de boxplot salvo para a coluna: ano_nascimento
+2025-03-29 11:43:10,490 - INFO - Gráfico de boxplot salvo para a coluna: renda
+2025-03-29 11:43:10,663 - INFO - Gráfico de boxplot salvo para a coluna: criancas_em_casa
+2025-03-29 11:43:10,839 - INFO - Gráfico de boxplot salvo para a coluna: adolescentes_em_casa
+2025-03-29 11:43:11,003 - INFO - Gráfico de boxplot salvo para a coluna: recencia
+2025-03-29 11:43:11,177 - INFO - Gráfico de boxplot salvo para a coluna: gastos_vinhos
+2025-03-29 11:43:11,343 - INFO - Gráfico de boxplot salvo para a coluna: gastos_frutas
+2025-03-29 11:43:11,508 - INFO - Gráfico de boxplot salvo para a coluna: gastos_carnes
+2025-03-29 11:43:11,797 - INFO - Gráfico de boxplot salvo para a coluna: gastos_peixes
+2025-03-29 11:43:11,969 - INFO - Gráfico de boxplot salvo para a coluna: gastos_doces
+2025-03-29 11:43:12,138 - INFO - Gráfico de boxplot salvo para a coluna: gastos_joias
+2025-03-29 11:43:12,306 - INFO - Gráfico de boxplot salvo para a coluna: compras_promocao
+2025-03-29 11:43:12,479 - INFO - Gráfico de boxplot salvo para a coluna: compras_web
+2025-03-29 11:43:12,652 - INFO - Gráfico de boxplot salvo para a coluna: compras_catalogo
+2025-03-29 11:43:12,823 - INFO - Gráfico de boxplot salvo para a coluna: compras_loja
+2025-03-29 11:43:13,038 - INFO - Gráfico de boxplot salvo para a coluna: visitas_web_mes
+2025-03-29 11:43:13,201 - INFO - Gráfico de boxplot salvo para a coluna: aceitou_campanha3
+2025-03-29 11:43:13,365 - INFO - Gráfico de boxplot salvo para a coluna: aceitou_campanha4
+2025-03-29 11:43:13,541 - INFO - Gráfico de boxplot salvo para a coluna: aceitou_campanha5
+2025-03-29 11:43:13,713 - INFO - Gráfico de boxplot salvo para a coluna: aceitou_campanha1
+2025-03-29 11:43:13,878 - INFO - Gráfico de boxplot salvo para a coluna: aceitou_campanha2
+2025-03-29 11:43:14,057 - INFO - Gráfico de boxplot salvo para a coluna: reclamacao
+2025-03-29 11:43:14,229 - INFO - Gráfico de boxplot salvo para a coluna: custo_contato
+2025-03-29 11:43:14,402 - INFO - Gráfico de boxplot salvo para a coluna: receita
+2025-03-29 11:43:14,564 - INFO - Gráfico de boxplot salvo para a coluna: resposta
+2025-03-29 11:43:14,841 - INFO - Gráfico de barras salvo para a coluna: educacao
+2025-03-29 11:43:15,070 - INFO - Gráfico de barras salvo para a coluna: estado_civil
+2025-03-29 11:43:17,061 - INFO - Gráfico de barras salvo para a coluna: data_cliente
+2025-03-29 11:43:17,948 - INFO - Gráfico de matriz de correlação salvo.
+2025-03-29 11:43:18,295 - INFO - Scatter plot salvo para gastos_vinhos vs gastos_carnes.
+2025-03-29 11:43:18,521 - INFO - Scatter plot salvo para renda vs recencia.
+2025-03-29 11:43:18,521 - INFO - Análise exploratória de dados (EDA) concluída com sucesso.
+2025-03-29 12:01:19,566 - INFO - Iniciando análise exploratória de dados (EDA).
+2025-03-29 12:01:19,581 - INFO - Número de linhas: 839 | Número de colunas: 29
+2025-03-29 12:01:19,581 - INFO - Tipos de dados registrados.
+2025-03-29 12:01:19,581 - INFO - Gerando estatísticas descritivas das variáveis numéricas.
+2025-03-29 12:01:19,679 - INFO - Gerando estatísticas descritivas das variáveis categóricas.
+2025-03-29 12:01:19,696 - INFO - Estatísticas descritivas salvas no diretório especificado.
+2025-03-29 12:01:19,696 - INFO - Iniciando a geração de gráficos.
+2025-03-29 12:01:20,077 - INFO - Gráfico de histograma salvo para a coluna: id
+2025-03-29 12:01:20,349 - INFO - Gráfico de histograma salvo para a coluna: ano_nascimento
+2025-03-29 12:01:20,625 - INFO - Gráfico de histograma salvo para a coluna: renda
+2025-03-29 12:01:20,895 - INFO - Gráfico de histograma salvo para a coluna: criancas_em_casa
+2025-03-29 12:01:21,175 - INFO - Gráfico de histograma salvo para a coluna: adolescentes_em_casa
+2025-03-29 12:01:21,438 - INFO - Gráfico de histograma salvo para a coluna: recencia
+2025-03-29 12:01:21,700 - INFO - Gráfico de histograma salvo para a coluna: gastos_vinhos
+2025-03-29 12:01:21,951 - INFO - Gráfico de histograma salvo para a coluna: gastos_frutas
+2025-03-29 12:01:22,196 - INFO - Gráfico de histograma salvo para a coluna: gastos_carnes
+2025-03-29 12:01:22,442 - INFO - Gráfico de histograma salvo para a coluna: gastos_peixes
+2025-03-29 12:01:22,688 - INFO - Gráfico de histograma salvo para a coluna: gastos_doces
+2025-03-29 12:01:22,944 - INFO - Gráfico de histograma salvo para a coluna: gastos_joias
+2025-03-29 12:01:23,198 - INFO - Gráfico de histograma salvo para a coluna: compras_promocao
+2025-03-29 12:01:23,573 - INFO - Gráfico de histograma salvo para a coluna: compras_web
+2025-03-29 12:01:23,914 - INFO - Gráfico de histograma salvo para a coluna: compras_catalogo
+2025-03-29 12:01:24,254 - INFO - Gráfico de histograma salvo para a coluna: compras_loja
+2025-03-29 12:01:24,530 - INFO - Gráfico de histograma salvo para a coluna: visitas_web_mes
+2025-03-29 12:01:24,776 - INFO - Gráfico de histograma salvo para a coluna: aceitou_campanha3
+2025-03-29 12:01:25,014 - INFO - Gráfico de histograma salvo para a coluna: aceitou_campanha4
+2025-03-29 12:01:25,258 - INFO - Gráfico de histograma salvo para a coluna: aceitou_campanha5
+2025-03-29 12:01:25,553 - INFO - Gráfico de histograma salvo para a coluna: aceitou_campanha1
+2025-03-29 12:01:25,793 - INFO - Gráfico de histograma salvo para a coluna: aceitou_campanha2
+2025-03-29 12:01:26,031 - INFO - Gráfico de histograma salvo para a coluna: reclamacao
+2025-03-29 12:01:26,279 - INFO - Gráfico de histograma salvo para a coluna: custo_contato
+2025-03-29 12:01:26,533 - INFO - Gráfico de histograma salvo para a coluna: receita
+2025-03-29 12:01:26,773 - INFO - Gráfico de histograma salvo para a coluna: resposta
+2025-03-29 12:01:26,949 - INFO - Gráfico de boxplot salvo para a coluna: id
+2025-03-29 12:01:27,122 - INFO - Gráfico de boxplot salvo para a coluna: ano_nascimento
+2025-03-29 12:01:27,297 - INFO - Gráfico de boxplot salvo para a coluna: renda
+2025-03-29 12:01:27,554 - INFO - Gráfico de boxplot salvo para a coluna: criancas_em_casa
+2025-03-29 12:01:27,738 - INFO - Gráfico de boxplot salvo para a coluna: adolescentes_em_casa
+2025-03-29 12:01:27,916 - INFO - Gráfico de boxplot salvo para a coluna: recencia
+2025-03-29 12:01:28,094 - INFO - Gráfico de boxplot salvo para a coluna: gastos_vinhos
+2025-03-29 12:01:28,271 - INFO - Gráfico de boxplot salvo para a coluna: gastos_frutas
+2025-03-29 12:01:28,442 - INFO - Gráfico de boxplot salvo para a coluna: gastos_carnes
+2025-03-29 12:01:28,617 - INFO - Gráfico de boxplot salvo para a coluna: gastos_peixes
+2025-03-29 12:01:28,792 - INFO - Gráfico de boxplot salvo para a coluna: gastos_doces
+2025-03-29 12:01:28,968 - INFO - Gráfico de boxplot salvo para a coluna: gastos_joias
+2025-03-29 12:01:29,142 - INFO - Gráfico de boxplot salvo para a coluna: compras_promocao
+2025-03-29 12:01:29,318 - INFO - Gráfico de boxplot salvo para a coluna: compras_web
+2025-03-29 12:01:29,508 - INFO - Gráfico de boxplot salvo para a coluna: compras_catalogo
+2025-03-29 12:01:29,682 - INFO - Gráfico de boxplot salvo para a coluna: compras_loja
+2025-03-29 12:01:29,859 - INFO - Gráfico de boxplot salvo para a coluna: visitas_web_mes
+2025-03-29 12:01:30,031 - INFO - Gráfico de boxplot salvo para a coluna: aceitou_campanha3
+2025-03-29 12:01:30,205 - INFO - Gráfico de boxplot salvo para a coluna: aceitou_campanha4
+2025-03-29 12:01:30,409 - INFO - Gráfico de boxplot salvo para a coluna: aceitou_campanha5
+2025-03-29 12:01:30,583 - INFO - Gráfico de boxplot salvo para a coluna: aceitou_campanha1
+2025-03-29 12:01:30,755 - INFO - Gráfico de boxplot salvo para a coluna: aceitou_campanha2
+2025-03-29 12:01:30,927 - INFO - Gráfico de boxplot salvo para a coluna: reclamacao
+2025-03-29 12:01:31,107 - INFO - Gráfico de boxplot salvo para a coluna: custo_contato
+2025-03-29 12:01:31,283 - INFO - Gráfico de boxplot salvo para a coluna: receita
+2025-03-29 12:01:31,469 - INFO - Gráfico de boxplot salvo para a coluna: resposta
+2025-03-29 12:01:31,690 - INFO - Gráfico de barras salvo para a coluna: educacao
+2025-03-29 12:01:31,976 - INFO - Gráfico de barras salvo para a coluna: estado_civil
+2025-03-29 12:01:34,027 - INFO - Gráfico de barras salvo para a coluna: data_cliente
+2025-03-29 12:01:34,846 - INFO - Gráfico de matriz de correlação salvo.
+2025-03-29 12:01:35,060 - INFO - Scatter plot salvo para gastos_vinhos vs gastos_carnes.
+2025-03-29 12:01:35,281 - INFO - Scatter plot salvo para renda vs recencia.
+2025-03-29 12:01:35,282 - INFO - Aplicando PCA para visualização reduzida.
+2025-03-29 12:01:35,882 - INFO - Gráfico de visualização com PCA salvo.
+2025-03-29 12:01:35,882 - INFO - Análise exploratória de dados (EDA) concluída com sucesso.
+2025-03-29 12:29:35,331 - INFO - Iniciando análise exploratória de dados (EDA).
+2025-03-29 12:29:35,374 - INFO - Número de linhas: 2240 | Número de colunas: 29
+2025-03-29 12:29:35,374 - INFO - Tipos de dados registrados.
+2025-03-29 12:29:35,374 - INFO - Gerando estatísticas descritivas das variáveis numéricas.
+2025-03-29 12:29:35,522 - INFO - Gerando estatísticas descritivas das variáveis categóricas.
+2025-03-29 12:29:35,546 - INFO - Estatísticas descritivas salvas no diretório especificado.
+2025-03-29 12:29:35,547 - INFO - Iniciando a geração de gráficos.
+2025-03-29 12:29:36,629 - INFO - Gráfico de histograma salvo para a coluna: id
+2025-03-29 12:29:36,991 - INFO - Gráfico de histograma salvo para a coluna: ano_nascimento
+2025-03-29 12:29:37,256 - INFO - Gráfico de histograma salvo para a coluna: renda
+2025-03-29 12:29:37,520 - INFO - Gráfico de histograma salvo para a coluna: criancas_em_casa
+2025-03-29 12:29:37,775 - INFO - Gráfico de histograma salvo para a coluna: adolescentes_em_casa
+2025-03-29 12:29:38,017 - INFO - Gráfico de histograma salvo para a coluna: recencia
+2025-03-29 12:29:38,264 - INFO - Gráfico de histograma salvo para a coluna: gastos_vinhos
+2025-03-29 12:29:38,513 - INFO - Gráfico de histograma salvo para a coluna: gastos_frutas
+2025-03-29 12:29:38,759 - INFO - Gráfico de histograma salvo para a coluna: gastos_carnes
+2025-03-29 12:29:39,004 - INFO - Gráfico de histograma salvo para a coluna: gastos_peixes
+2025-03-29 12:29:39,266 - INFO - Gráfico de histograma salvo para a coluna: gastos_doces
+2025-03-29 12:29:39,502 - INFO - Gráfico de histograma salvo para a coluna: gastos_joias
+2025-03-29 12:29:39,735 - INFO - Gráfico de histograma salvo para a coluna: compras_promocao
+2025-03-29 12:29:39,979 - INFO - Gráfico de histograma salvo para a coluna: compras_web
+2025-03-29 12:29:40,286 - INFO - Gráfico de histograma salvo para a coluna: compras_catalogo
+2025-03-29 12:29:40,528 - INFO - Gráfico de histograma salvo para a coluna: compras_loja
+2025-03-29 12:29:40,777 - INFO - Gráfico de histograma salvo para a coluna: visitas_web_mes
+2025-03-29 12:29:41,039 - INFO - Gráfico de histograma salvo para a coluna: aceitou_campanha3
+2025-03-29 12:29:41,285 - INFO - Gráfico de histograma salvo para a coluna: aceitou_campanha4
+2025-03-29 12:29:41,531 - INFO - Gráfico de histograma salvo para a coluna: aceitou_campanha5
+2025-03-29 12:29:41,776 - INFO - Gráfico de histograma salvo para a coluna: aceitou_campanha1
+2025-03-29 12:29:42,009 - INFO - Gráfico de histograma salvo para a coluna: aceitou_campanha2
+2025-03-29 12:29:42,217 - INFO - Gráfico de histograma salvo para a coluna: reclamacao
+2025-03-29 12:29:42,425 - INFO - Gráfico de histograma salvo para a coluna: custo_contato
+2025-03-29 12:29:42,629 - INFO - Gráfico de histograma salvo para a coluna: receita
+2025-03-29 12:29:42,887 - INFO - Gráfico de histograma salvo para a coluna: resposta
+2025-03-29 12:29:43,044 - INFO - Gráfico de boxplot salvo para a coluna: id
+2025-03-29 12:29:43,197 - INFO - Gráfico de boxplot salvo para a coluna: ano_nascimento
+2025-03-29 12:29:43,349 - INFO - Gráfico de boxplot salvo para a coluna: renda
+2025-03-29 12:29:43,508 - INFO - Gráfico de boxplot salvo para a coluna: criancas_em_casa
+2025-03-29 12:29:43,741 - INFO - Gráfico de boxplot salvo para a coluna: adolescentes_em_casa
+2025-03-29 12:29:43,894 - INFO - Gráfico de boxplot salvo para a coluna: recencia
+2025-03-29 12:29:44,052 - INFO - Gráfico de boxplot salvo para a coluna: gastos_vinhos
+2025-03-29 12:29:44,212 - INFO - Gráfico de boxplot salvo para a coluna: gastos_frutas
+2025-03-29 12:29:44,372 - INFO - Gráfico de boxplot salvo para a coluna: gastos_carnes
+2025-03-29 12:29:44,524 - INFO - Gráfico de boxplot salvo para a coluna: gastos_peixes
+2025-03-29 12:29:44,683 - INFO - Gráfico de boxplot salvo para a coluna: gastos_doces
+2025-03-29 12:29:44,841 - INFO - Gráfico de boxplot salvo para a coluna: gastos_joias
+2025-03-29 12:29:44,994 - INFO - Gráfico de boxplot salvo para a coluna: compras_promocao
+2025-03-29 12:29:45,154 - INFO - Gráfico de boxplot salvo para a coluna: compras_web
+2025-03-29 12:29:45,310 - INFO - Gráfico de boxplot salvo para a coluna: compras_catalogo
+2025-03-29 12:29:45,466 - INFO - Gráfico de boxplot salvo para a coluna: compras_loja
+2025-03-29 12:29:45,630 - INFO - Gráfico de boxplot salvo para a coluna: visitas_web_mes
+2025-03-29 12:29:45,812 - INFO - Gráfico de boxplot salvo para a coluna: aceitou_campanha3
+2025-03-29 12:29:45,968 - INFO - Gráfico de boxplot salvo para a coluna: aceitou_campanha4
+2025-03-29 12:29:46,124 - INFO - Gráfico de boxplot salvo para a coluna: aceitou_campanha5
+2025-03-29 12:29:46,284 - INFO - Gráfico de boxplot salvo para a coluna: aceitou_campanha1
+2025-03-29 12:29:46,441 - INFO - Gráfico de boxplot salvo para a coluna: aceitou_campanha2
+2025-03-29 12:29:46,601 - INFO - Gráfico de boxplot salvo para a coluna: reclamacao
+2025-03-29 12:29:46,780 - INFO - Gráfico de boxplot salvo para a coluna: custo_contato
+2025-03-29 12:29:46,941 - INFO - Gráfico de boxplot salvo para a coluna: receita
+2025-03-29 12:29:47,109 - INFO - Gráfico de boxplot salvo para a coluna: resposta
+2025-03-29 12:29:47,301 - INFO - Gráfico de barras salvo para a coluna: educacao
+2025-03-29 12:29:47,488 - INFO - Gráfico de barras salvo para a coluna: estado_civil
+2025-03-29 12:29:50,031 - INFO - Gráfico de barras salvo para a coluna: data_cliente
+2025-03-29 12:29:51,003 - INFO - Gráfico de matriz de correlação salvo.
+2025-03-29 12:29:51,202 - INFO - Scatter plot salvo para gastos_vinhos vs gastos_carnes.
+2025-03-29 12:29:51,404 - INFO - Scatter plot salvo para renda vs recencia.
+2025-03-29 12:29:51,404 - INFO - Aplicando PCA para visualização reduzida.
+2025-03-29 12:29:51,684 - INFO - Gráfico de visualização com PCA salvo.
+2025-03-29 12:29:51,685 - INFO - Análise exploratória de dados (EDA) concluída com sucesso.

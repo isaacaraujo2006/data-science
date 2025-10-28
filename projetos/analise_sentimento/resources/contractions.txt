@@ -1,0 +1,8 @@
+can't,cannot
+won't,will not
+i'm,i am
+they're,they are
+it's,it is
+aren't,are not
+doesn't,does not
+isn't,is not

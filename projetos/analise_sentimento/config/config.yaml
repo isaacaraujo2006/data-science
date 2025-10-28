@@ -1,0 +1,34 @@
+# Configuração Inicial do Projeto de Churn de Clientes
+
+paths:
+  config_dir: "C:/Github/data-science/projetos/analise_sentimento/config/config.yaml"
+  logs_dir: "C:/Github/data-science/projetos/analise_sentimento/logs"
+  notebook_dir: "C:/Github/data-science/projetos/churn_clientes/notebook/"
+  src_dir: "C:/Github/data-science/projetos/analise_sentimento/src"
+  figures_dir: "C:/Github/data-science/projetos/analise_sentimento/reports/figures"
+
+models:
+  directory: "C:/Github/data-science/projetos/analise_sentimento/models"
+  final_model: "C:/Github/data-science/projetos/churn_clientes/models/final_model.joblib"
+
+preprocessors:
+  preprocessor_path: "C:/Github/data-science/projetos/analise_sentimento/preprocessors/preprocessor.joblib"
+  scaler_path: "C:/Github/data-science/projetos/analise_sentimento/preprocessors/scaler.joblib"
+
+data:
+  raw: "C:/Github/data-science/projetos/analise_sentimento/data/raw/impuro/asentimentos.csv"
+  processed_csv: "C:/Github/data-science/projetos/churn_clientes/data/processed/processed.csv"
+  processed_parquet: "C:/Github/data-science/projetos/churn_clientes/data/processed/processed.parquet"
+
+logs:
+  file: "C:/Github/data-science/projetos/analise_sentimento/logs/data_processing.log"
+
+reports:
+  directory: "C:/Github/data-science/projetos/analise_sentimento/reports"
+
+metrics:
+  directory: "C:/Github/data-science/projetos/churn_clientes/metrics"
+
+# Requisitos do Ambiente
+python:
+  version: "3.8"

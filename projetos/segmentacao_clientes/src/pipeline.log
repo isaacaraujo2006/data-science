@@ -1,0 +1,19 @@
+2025-03-29 11:34:17,013 - INFO - Iniciando o pipeline de importação e validação.
+2025-03-29 11:34:17,082 - INFO - Dataset importado com sucesso.
+2025-03-29 11:34:17,101 - INFO - Número de linhas: 2240 | Número de colunas: 29
+2025-03-29 11:34:17,104 - INFO - Tipos de dados originais analisados.
+2025-03-29 11:34:17,111 - INFO - Verificação de valores ausentes concluída.
+2025-03-29 11:34:17,140 - INFO - Nomes de colunas traduzidos para português.
+2025-03-29 11:34:17,223 - INFO - Tipos de dados ajustados corretamente.
+2025-03-29 11:34:17,231 - INFO - Número de registros duplicados: 0
+2025-03-29 11:35:40,407 - INFO - Iniciando o pipeline de importação e validação.
+2025-03-29 11:35:40,444 - INFO - Dataset importado com sucesso.
+2025-03-29 11:35:40,445 - INFO - Número de linhas: 2240 | Número de colunas: 29
+2025-03-29 11:35:40,457 - INFO - Tipos de dados originais analisados.
+2025-03-29 11:35:40,463 - INFO - Verificação de valores ausentes concluída.
+2025-03-29 11:35:40,464 - INFO - Nomes de colunas traduzidos para português.
+2025-03-29 11:35:40,482 - INFO - Tipos de dados ajustados corretamente.
+2025-03-29 11:35:40,491 - INFO - Número de registros duplicados: 0
+2025-03-29 11:35:40,491 - INFO - Colunas não utilizadas identificadas: set()
+2025-03-29 11:35:40,684 - INFO - Estatísticas descritivas geradas.
+2025-03-29 11:35:40,684 - INFO - Pipeline de importação e validação concluído com sucesso.

@@ -1,0 +1,23 @@
+
+# Projeto de Churn de Clientes
+
+## Validação Final e Recomendações
+
+### Verificação Final
+- Verificação final dos resultados e modelos concluída.
+- Todos os resultados e modelos foram salvos e documentados.
+
+### Recomendações Finais
+- Implementar o melhor modelo em um ambiente de produção para monitoramento contínuo.
+- Realizar ajustes periódicos no modelo com base em novos dados de clientes.
+- Considerar outras técnicas de machine learning e deep learning para futuras melhorias.
+- Manter um monitoramento contínuo das métricas de desempenho do modelo.
+
+## Modelos e Resultados
+- Os modelos foram treinados e avaliados usando Regressão Logística, Árvore de Decisão, Floresta Aleatória e Floresta Aleatória Ajustada.
+- O melhor modelo foi a **Floresta Aleatória Ajustada** com uma AUC-ROC de 0.5.
+- O relatório de classificação e as métricas de desempenho foram documentados.
+
+## Diretórios
+- Modelos: `C:/Github/data-science/projetos/churn_clientes/models/melhor_modelo_rf.pkl`
+- Relatórios: `C:/Github/data-science/projetos/churn_clientes/reports/relatorio_final.txt`

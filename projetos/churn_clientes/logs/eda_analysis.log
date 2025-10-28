@@ -1,0 +1,371 @@
+2025-02-26 15:24:34,419 - INFO - Dataset carregado: C:/Github/data-science/projetos/churn_clientes/data/processed/processed.parquet
+2025-02-26 15:24:34,420 - INFO - Número de linhas: 5369, Número de colunas: 14
+2025-02-26 15:24:34,420 - INFO - Tipos de dados: 
+tempo_relacionamento    float64
+saldo                   float64
+numero_produtos         float64
+cartao_credito          float64
+membro_ativo            float64
+salario_estimado        float64
+coluna_extra1           float64
+coluna_extra2           float64
+pontuacao_credito        object
+geografia                object
+genero                   object
+idade                    object
+nome_completo            object
+classe                  float64
+dtype: object
+2025-02-26 15:24:34,464 - INFO - Estatísticas Descritivas: 
+        tempo_relacionamento        saldo  numero_produtos  cartao_credito  ...  genero  idade  nome_completo       classe
+count             5369.00000  5369.000000      5369.000000     5369.000000  ...    5369   5369           5369  5369.000000
+unique                   NaN          NaN              NaN             NaN  ...       3      2           5369          NaN
+top                      NaN          NaN              NaN             NaN  ...  France   Male     2 15647311          NaN
+freq                     NaN          NaN              NaN             NaN  ...    2710   2928              1          NaN
+mean                36.17750     5.012107     72650.049172        1.542745  ...     NaN    NaN            NaN     0.499721
+std                  8.08989     2.865795     63087.755608        0.508578  ...     NaN    NaN            NaN     0.500046
+min                 18.00000     0.000000         0.000000        1.000000  ...     NaN    NaN            NaN     0.000000
+25%                 31.00000     3.000000         0.000000        1.000000  ...     NaN    NaN            NaN     0.000000
+50%                 36.00000     5.000000     91025.580000        2.000000  ...     NaN    NaN            NaN     0.000000
+75%                 41.00000     7.000000    126776.300000        2.000000  ...     NaN    NaN            NaN     1.000000
+max                 62.00000    10.000000    221532.800000        3.000000  ...     NaN    NaN            NaN     1.000000
+
+[11 rows x 14 columns]
+2025-02-26 15:24:34,468 - INFO - Valores nulos por coluna: 
+tempo_relacionamento    0
+saldo                   0
+numero_produtos         0
+cartao_credito          0
+membro_ativo            0
+salario_estimado        0
+coluna_extra1           0
+coluna_extra2           0
+pontuacao_credito       0
+geografia               0
+genero                  0
+idade                   0
+nome_completo           0
+classe                  0
+dtype: int64
+2025-02-26 15:25:56,496 - INFO - Dataset carregado: C:/Github/data-science/projetos/churn_clientes/data/processed/processed.parquet
+2025-02-26 15:25:56,496 - INFO - Número de linhas: 5369, Número de colunas: 14
+2025-02-26 15:25:56,497 - INFO - Tipos de dados: 
+tempo_relacionamento    float64
+saldo                   float64
+numero_produtos         float64
+cartao_credito          float64
+membro_ativo            float64
+salario_estimado        float64
+coluna_extra1           float64
+coluna_extra2           float64
+pontuacao_credito        object
+geografia                object
+genero                   object
+idade                    object
+nome_completo            object
+classe                  float64
+dtype: object
+2025-02-26 15:25:56,542 - INFO - Estatísticas Descritivas: 
+        tempo_relacionamento        saldo  numero_produtos  cartao_credito  ...  genero  idade  nome_completo       classe
+count             5369.00000  5369.000000      5369.000000     5369.000000  ...    5369   5369           5369  5369.000000
+unique                   NaN          NaN              NaN             NaN  ...       3      2           5369          NaN
+top                      NaN          NaN              NaN             NaN  ...  France   Male     2 15647311          NaN
+freq                     NaN          NaN              NaN             NaN  ...    2710   2928              1          NaN
+mean                36.17750     5.012107     72650.049172        1.542745  ...     NaN    NaN            NaN     0.499721
+std                  8.08989     2.865795     63087.755608        0.508578  ...     NaN    NaN            NaN     0.500046
+min                 18.00000     0.000000         0.000000        1.000000  ...     NaN    NaN            NaN     0.000000
+25%                 31.00000     3.000000         0.000000        1.000000  ...     NaN    NaN            NaN     0.000000
+50%                 36.00000     5.000000     91025.580000        2.000000  ...     NaN    NaN            NaN     0.000000
+75%                 41.00000     7.000000    126776.300000        2.000000  ...     NaN    NaN            NaN     1.000000
+max                 62.00000    10.000000    221532.800000        3.000000  ...     NaN    NaN            NaN     1.000000
+
+[11 rows x 14 columns]
+2025-02-26 15:25:56,547 - INFO - Valores nulos por coluna: 
+tempo_relacionamento    0
+saldo                   0
+numero_produtos         0
+cartao_credito          0
+membro_ativo            0
+salario_estimado        0
+coluna_extra1           0
+coluna_extra2           0
+pontuacao_credito       0
+geografia               0
+genero                  0
+idade                   0
+nome_completo           0
+classe                  0
+dtype: int64
+2025-02-26 15:26:39,827 - INFO - Dataset carregado: C:/Github/data-science/projetos/churn_clientes/data/processed/processed.parquet
+2025-02-26 15:26:39,827 - INFO - Número de linhas: 5369, Número de colunas: 14
+2025-02-26 15:26:39,828 - INFO - Tipos de dados: 
+tempo_relacionamento    float64
+saldo                   float64
+numero_produtos         float64
+cartao_credito          float64
+membro_ativo            float64
+salario_estimado        float64
+coluna_extra1           float64
+coluna_extra2           float64
+pontuacao_credito        object
+geografia                object
+genero                   object
+idade                    object
+nome_completo            object
+classe                  float64
+dtype: object
+2025-02-26 15:26:39,875 - INFO - Estatísticas Descritivas: 
+        tempo_relacionamento        saldo  numero_produtos  cartao_credito  ...  genero  idade  nome_completo       classe
+count             5369.00000  5369.000000      5369.000000     5369.000000  ...    5369   5369           5369  5369.000000
+unique                   NaN          NaN              NaN             NaN  ...       3      2           5369          NaN
+top                      NaN          NaN              NaN             NaN  ...  France   Male     2 15647311          NaN
+freq                     NaN          NaN              NaN             NaN  ...    2710   2928              1          NaN
+mean                36.17750     5.012107     72650.049172        1.542745  ...     NaN    NaN            NaN     0.499721
+std                  8.08989     2.865795     63087.755608        0.508578  ...     NaN    NaN            NaN     0.500046
+min                 18.00000     0.000000         0.000000        1.000000  ...     NaN    NaN            NaN     0.000000
+25%                 31.00000     3.000000         0.000000        1.000000  ...     NaN    NaN            NaN     0.000000
+50%                 36.00000     5.000000     91025.580000        2.000000  ...     NaN    NaN            NaN     0.000000
+75%                 41.00000     7.000000    126776.300000        2.000000  ...     NaN    NaN            NaN     1.000000
+max                 62.00000    10.000000    221532.800000        3.000000  ...     NaN    NaN            NaN     1.000000
+
+[11 rows x 14 columns]
+2025-02-26 15:26:39,880 - INFO - Valores nulos por coluna: 
+tempo_relacionamento    0
+saldo                   0
+numero_produtos         0
+cartao_credito          0
+membro_ativo            0
+salario_estimado        0
+coluna_extra1           0
+coluna_extra2           0
+pontuacao_credito       0
+geografia               0
+genero                  0
+idade                   0
+nome_completo           0
+classe                  0
+dtype: int64
+2025-02-26 15:29:17,146 - INFO - Dataset carregado: C:/Github/data-science/projetos/churn_clientes/data/processed/processed.parquet
+2025-02-26 15:29:17,147 - INFO - Número de linhas: 5369, Número de colunas: 14
+2025-02-26 15:29:17,148 - INFO - Tipos de dados: 
+tempo_relacionamento    float64
+saldo                   float64
+numero_produtos         float64
+cartao_credito          float64
+membro_ativo            float64
+salario_estimado        float64
+coluna_extra1           float64
+coluna_extra2           float64
+pontuacao_credito        object
+geografia                object
+genero                   object
+idade                    object
+nome_completo            object
+classe                  float64
+dtype: object
+2025-02-26 15:29:17,148 - INFO - Colunas do DataFrame: ['tempo_relacionamento', 'saldo', 'numero_produtos', 'cartao_credito', 'membro_ativo', 'salario_estimado', 'coluna_extra1', 'coluna_extra2', 'pontuacao_credito', 'geografia', 'genero', 'idade', 'nome_completo', 'classe']
+2025-02-26 15:29:17,148 - ERROR - Coluna 'Classe' não encontrada no DataFrame.
+2025-02-26 15:32:02,756 - INFO - Dataset carregado: C:/Github/data-science/projetos/churn_clientes/data/processed/processed.parquet
+2025-02-26 15:32:02,756 - INFO - Número de linhas: 5369, Número de colunas: 14
+2025-02-26 15:32:02,757 - INFO - Tipos de dados: 
+tempo_relacionamento    float64
+saldo                   float64
+numero_produtos         float64
+cartao_credito          float64
+membro_ativo            float64
+salario_estimado        float64
+coluna_extra1           float64
+coluna_extra2           float64
+pontuacao_credito        object
+geografia                object
+genero                   object
+idade                    object
+nome_completo            object
+classe                  float64
+dtype: object
+2025-02-26 15:32:02,803 - INFO - Estatísticas Descritivas: 
+        tempo_relacionamento        saldo  numero_produtos  cartao_credito  ...  genero  idade  nome_completo       classe
+count             5369.00000  5369.000000      5369.000000     5369.000000  ...    5369   5369           5369  5369.000000
+unique                   NaN          NaN              NaN             NaN  ...       3      2           5369          NaN
+top                      NaN          NaN              NaN             NaN  ...  France   Male     2 15647311          NaN
+freq                     NaN          NaN              NaN             NaN  ...    2710   2928              1          NaN
+mean                36.17750     5.012107     72650.049172        1.542745  ...     NaN    NaN            NaN     0.499721
+std                  8.08989     2.865795     63087.755608        0.508578  ...     NaN    NaN            NaN     0.500046
+min                 18.00000     0.000000         0.000000        1.000000  ...     NaN    NaN            NaN     0.000000
+25%                 31.00000     3.000000         0.000000        1.000000  ...     NaN    NaN            NaN     0.000000
+50%                 36.00000     5.000000     91025.580000        2.000000  ...     NaN    NaN            NaN     0.000000
+75%                 41.00000     7.000000    126776.300000        2.000000  ...     NaN    NaN            NaN     1.000000
+max                 62.00000    10.000000    221532.800000        3.000000  ...     NaN    NaN            NaN     1.000000
+
+[11 rows x 14 columns]
+2025-02-26 15:32:02,808 - INFO - Valores nulos por coluna: 
+tempo_relacionamento    0
+saldo                   0
+numero_produtos         0
+cartao_credito          0
+membro_ativo            0
+salario_estimado        0
+coluna_extra1           0
+coluna_extra2           0
+pontuacao_credito       0
+geografia               0
+genero                  0
+idade                   0
+nome_completo           0
+classe                  0
+dtype: int64
+2025-02-26 15:33:00,670 - INFO - Dataset carregado: C:/Github/data-science/projetos/churn_clientes/data/processed/processed.parquet
+2025-02-26 15:33:00,670 - ERROR - Coluna 'Classe' não encontrada no dataset!
+2025-02-26 15:33:37,172 - INFO - Dataset carregado: C:/Github/data-science/projetos/churn_clientes/data/processed/processed.parquet
+2025-02-26 15:33:37,172 - INFO - Colunas do DataFrame: ['tempo_relacionamento', 'saldo', 'numero_produtos', 'cartao_credito', 'membro_ativo', 'salario_estimado', 'coluna_extra1', 'coluna_extra2', 'pontuacao_credito', 'geografia', 'genero', 'idade', 'nome_completo', 'classe']
+2025-02-26 15:34:25,527 - INFO - Dataset carregado: C:/Github/data-science/projetos/churn_clientes/data/processed/processed.parquet
+2025-02-26 15:34:25,527 - INFO - Colunas do DataFrame: ['tempo_relacionamento', 'saldo', 'numero_produtos', 'cartao_credito', 'membro_ativo', 'salario_estimado', 'coluna_extra1', 'coluna_extra2', 'pontuacao_credito', 'geografia', 'genero', 'idade', 'nome_completo', 'classe']
+2025-02-26 15:34:25,527 - ERROR - Coluna 'Classe' não encontrada no dataset!
+2025-02-26 15:35:06,458 - INFO - Dataset carregado: C:/Github/data-science/projetos/churn_clientes/data/processed/processed.parquet
+2025-02-26 15:35:06,458 - INFO - Colunas do DataFrame: ['tempo_relacionamento', 'saldo', 'numero_produtos', 'cartao_credito', 'membro_ativo', 'salario_estimado', 'coluna_extra1', 'coluna_extra2', 'pontuacao_credito', 'geografia', 'genero', 'idade', 'nome_completo', 'classe']
+2025-02-26 15:35:06,459 - INFO - Coluna de classe encontrada: classe
+2025-02-26 15:35:06,459 - INFO - Taxa de churn: 0.50
+2025-02-26 15:35:06,459 - INFO - Número de linhas: 5369, Número de colunas: 14
+2025-02-26 15:35:06,460 - INFO - Tipos de dados: 
+tempo_relacionamento    float64
+saldo                   float64
+numero_produtos         float64
+cartao_credito          float64
+membro_ativo            float64
+salario_estimado        float64
+coluna_extra1           float64
+coluna_extra2           float64
+pontuacao_credito        object
+geografia                object
+genero                   object
+idade                    object
+nome_completo            object
+classe                  float64
+dtype: object
+2025-02-26 15:35:06,508 - INFO - Estatísticas Descritivas: 
+        tempo_relacionamento        saldo  numero_produtos  cartao_credito  ...  genero  idade  nome_completo       classe
+count             5369.00000  5369.000000      5369.000000     5369.000000  ...    5369   5369           5369  5369.000000
+unique                   NaN          NaN              NaN             NaN  ...       3      2           5369          NaN
+top                      NaN          NaN              NaN             NaN  ...  France   Male     2 15647311          NaN
+freq                     NaN          NaN              NaN             NaN  ...    2710   2928              1          NaN
+mean                36.17750     5.012107     72650.049172        1.542745  ...     NaN    NaN            NaN     0.499721
+std                  8.08989     2.865795     63087.755608        0.508578  ...     NaN    NaN            NaN     0.500046
+min                 18.00000     0.000000         0.000000        1.000000  ...     NaN    NaN            NaN     0.000000
+25%                 31.00000     3.000000         0.000000        1.000000  ...     NaN    NaN            NaN     0.000000
+50%                 36.00000     5.000000     91025.580000        2.000000  ...     NaN    NaN            NaN     0.000000
+75%                 41.00000     7.000000    126776.300000        2.000000  ...     NaN    NaN            NaN     1.000000
+max                 62.00000    10.000000    221532.800000        3.000000  ...     NaN    NaN            NaN     1.000000
+
+[11 rows x 14 columns]
+2025-02-26 15:35:06,513 - INFO - Valores nulos por coluna: 
+tempo_relacionamento    0
+saldo                   0
+numero_produtos         0
+cartao_credito          0
+membro_ativo            0
+salario_estimado        0
+coluna_extra1           0
+coluna_extra2           0
+pontuacao_credito       0
+geografia               0
+genero                  0
+idade                   0
+nome_completo           0
+classe                  0
+dtype: int64
+2025-02-26 15:35:06,549 - INFO - Características dos clientes que cancelaram (Classe=1):        tempo_relacionamento        saldo  numero_produtos  ...  coluna_extra1  coluna_extra2  classe
+count           2683.000000  2683.000000      2683.000000  ...    2683.000000         2683.0  2683.0
+mean              36.159896     4.947074     71404.554125  ...  100317.568827            0.0     1.0
+std                8.065596     2.848949     63371.796342  ...   57499.795849            0.0     0.0
+min               18.000000     0.000000         0.000000  ...      90.070000            0.0     1.0
+25%               31.000000     2.500000         0.000000  ...   51397.113672            0.0     1.0
+50%               35.000000     5.000000     89409.950000  ...  100187.430000            0.0     1.0
+75%               41.000000     7.000000    126698.180000  ...  149106.505000            0.0     1.0
+max               62.000000    10.000000    212692.970000  ...  199953.330000            0.0     1.0
+
+[8 rows x 9 columns]
+2025-02-26 15:35:06,576 - INFO - Características dos clientes que não cancelaram (Classe=0):        tempo_relacionamento        saldo  numero_produtos  ...  coluna_extra1  coluna_extra2  classe
+count           2686.000000  2686.000000      2686.000000  ...    2686.000000         2686.0  2686.0
+mean              36.195086     5.077066     73894.153124  ...  101180.523392            0.0     0.0
+std                8.115548     2.881589     62789.881646  ...   57913.129339            0.0     0.0
+min               18.000000     0.000000         0.000000  ...     178.190000            0.0     0.0
+25%               31.000000     3.000000         0.000000  ...   51478.902500            0.0     0.0
+50%               36.000000     5.000000     92521.705000  ...  101322.610000            0.0     0.0
+75%               41.000000     8.000000    127034.775000  ...  151706.050000            0.0     0.0
+max               62.000000    10.000000    221532.800000  ...  199970.740000            0.0     0.0
+
+[8 rows x 9 columns]
+2025-02-26 15:35:06,958 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/distribuicao_tempo_relacionamento.png
+2025-02-26 15:35:07,103 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:07,113 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:07,203 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/boxplot_tempo_relacionamento_Classe.png
+2025-02-26 15:35:07,522 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/scatter_tempo_relacionamento_Classe.png
+2025-02-26 15:35:07,821 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/distribuicao_saldo.png
+2025-02-26 15:35:07,964 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:07,973 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:08,076 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/boxplot_saldo_Classe.png
+2025-02-26 15:35:08,360 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/scatter_saldo_Classe.png
+2025-02-26 15:35:08,639 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/distribuicao_numero_produtos.png
+2025-02-26 15:35:08,727 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:08,737 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:08,839 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/boxplot_numero_produtos_Classe.png
+2025-02-26 15:35:09,034 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/scatter_numero_produtos_Classe.png
+2025-02-26 15:35:09,313 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/distribuicao_cartao_credito.png
+2025-02-26 15:35:09,424 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:09,435 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:09,540 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/boxplot_cartao_credito_Classe.png
+2025-02-26 15:35:09,753 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/scatter_cartao_credito_Classe.png
+2025-02-26 15:35:10,063 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/distribuicao_membro_ativo.png
+2025-02-26 15:35:10,156 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:10,164 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:10,247 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/boxplot_membro_ativo_Classe.png
+2025-02-26 15:35:10,434 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/scatter_membro_ativo_Classe.png
+2025-02-26 15:35:10,712 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/distribuicao_salario_estimado.png
+2025-02-26 15:35:10,859 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:10,868 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:10,955 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/boxplot_salario_estimado_Classe.png
+2025-02-26 15:35:11,154 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/scatter_salario_estimado_Classe.png
+2025-02-26 15:35:11,434 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/distribuicao_coluna_extra1.png
+2025-02-26 15:35:11,551 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:11,561 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:11,654 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/boxplot_coluna_extra1_Classe.png
+2025-02-26 15:35:11,862 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/scatter_coluna_extra1_Classe.png
+2025-02-26 15:35:12,082 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/distribuicao_coluna_extra2.png
+2025-02-26 15:35:12,195 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:12,204 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:12,352 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/boxplot_coluna_extra2_Classe.png
+2025-02-26 15:35:12,570 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/scatter_coluna_extra2_Classe.png
+2025-02-26 15:35:12,855 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/distribuicao_classe.png
+2025-02-26 15:35:12,948 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:12,957 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:13,051 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/boxplot_classe_Classe.png
+2025-02-26 15:35:13,241 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/scatter_classe_Classe.png
+2025-02-26 15:35:13,638 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/corr_matrix.png
+2025-02-26 15:35:13,728 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:13,736 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:13,862 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/violin_tempo_relacionamento_Classe.png
+2025-02-26 15:35:13,996 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:14,010 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:14,139 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/violin_saldo_Classe.png
+2025-02-26 15:35:14,228 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:14,236 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:14,364 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/violin_numero_produtos_Classe.png
+2025-02-26 15:35:14,460 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:14,472 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:14,687 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/violin_cartao_credito_Classe.png
+2025-02-26 15:35:14,779 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:14,788 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:14,912 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/violin_membro_ativo_Classe.png
+2025-02-26 15:35:15,017 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:15,031 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:15,165 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/violin_salario_estimado_Classe.png
+2025-02-26 15:35:15,262 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:15,271 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:15,409 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/violin_coluna_extra1_Classe.png
+2025-02-26 15:35:15,514 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:15,524 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:15,598 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/violin_coluna_extra2_Classe.png
+2025-02-26 15:35:15,692 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:15,701 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-02-26 15:35:15,774 - INFO - Gráfico salvo em: C:/Github/data-science/projetos/churn_clientes/reports/figures/violin_classe_Classe.png
+2025-02-26 15:35:15,774 - INFO - Análise exploratória concluída com sucesso.

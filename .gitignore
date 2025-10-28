@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.mypy_cache/
+.pytype/
+.pyre/
+.pytest_cache/
+
+# Ambientes virtuais (qualquer subpasta)
+**/.venv/
+venv/
+.env
+.env.*
+
+# Build / dist
+dist/
+build/
+htmlcov/
+.coverage*
+coverage.xml
+
+# Jupyter / dados
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*.csv
+*.parquet
+
+# IDEs / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Streamlit cache
+.streamlit/

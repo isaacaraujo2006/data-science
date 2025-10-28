@@ -1,0 +1,203 @@
+2025-02-24 14:33:55,050 - ERROR - Não foi possível gerar boxplot devido à falta de dados distintos para 'membro_ativo'.
+2025-02-24 14:33:55,051 - ERROR - Não há dados suficientes para gerar gráficos.
+2025-02-24 14:37:04,380 - ERROR - Não foi possível gerar boxplot devido à falta de dados distintos para 'membro_ativo'.
+2025-02-24 14:37:05,390 - ERROR - Não há dados suficientes para gerar gráficos.
+2025-02-24 14:44:03,360 - INFO - Análise Exploratória dos Dados (EDA) e Análise Estatística Descritiva concluída.
+2025-02-24 14:44:03,360 - INFO - Estatísticas descritivas salvas em: C:/Github/data-science/projetos/churn_clientes/logs
+2025-02-24 14:44:03,360 - INFO - Gráficos salvos em: C:/Github/data-science/projetos/churn_clientes/reports/figures
+2025-02-24 14:45:39,460 - INFO - Análise Exploratória dos Dados (EDA) e Análise Estatística Descritiva concluída.
+2025-02-24 14:45:39,461 - INFO - Estatísticas descritivas salvas em: C:/Github/data-science/projetos/churn_clientes/logs
+2025-02-24 14:45:39,461 - INFO - Gráficos salvos em: C:/Github/data-science/projetos/churn_clientes/reports/figures
+2025-02-24 14:50:47,883 - INFO - Análise Exploratória dos Dados (EDA) e Análise Estatística Descritiva concluída.
+2025-02-24 14:50:47,883 - INFO - Estatísticas descritivas salvas em: C:/Github/data-science/projetos/churn_clientes/logs
+2025-02-24 14:50:47,884 - INFO - Gráficos salvos em: C:/Github/data-science/projetos/churn_clientes/reports/figures
+2025-02-24 14:55:57,784 - INFO - Análise Exploratória dos Dados (EDA) e Análise Estatística Descritiva concluída.
+2025-02-24 14:55:57,785 - INFO - Estatísticas descritivas salvas em: C:/Github/data-science/projetos/churn_clientes/logs
+2025-02-24 14:55:57,785 - INFO - Gráficos salvos em: C:/Github/data-science/projetos/churn_clientes/reports/figures
+2025-02-24 15:03:08,943 - INFO - Análise Exploratória dos Dados (EDA) e Análise Estatística Descritiva concluída.
+2025-02-24 15:03:08,943 - INFO - Estatísticas descritivas salvas em: C:/Github/data-science/projetos/churn_clientes/logs
+2025-02-24 15:03:08,943 - INFO - Gráficos salvos em: C:/Github/data-science/projetos/churn_clientes/reports/figures
+2025-02-26 15:05:32,292 - INFO - Número de linhas: 5369
+2025-02-26 15:05:32,313 - INFO - Número de colunas: 14
+2025-02-26 15:05:32,313 - INFO - Tipos de dados das colunas:
+2025-02-26 15:05:32,315 - INFO - tempo_relacionamento    float64
+saldo                   float64
+numero_produtos         float64
+cartao_credito          float64
+membro_ativo            float64
+salario_estimado        float64
+coluna_extra1           float64
+coluna_extra2           float64
+pontuacao_credito        object
+geografia                object
+genero                   object
+idade                    object
+nome_completo            object
+classe                  float64
+dtype: object
+2025-02-26 15:06:48,154 - INFO - Número de linhas: 5369
+2025-02-26 15:06:48,154 - INFO - Número de colunas: 14
+2025-02-26 15:06:48,154 - INFO - Tipos de dados das colunas:
+2025-02-26 15:06:48,155 - INFO - tempo_relacionamento    float64
+saldo                   float64
+numero_produtos         float64
+cartao_credito          float64
+membro_ativo            float64
+salario_estimado        float64
+coluna_extra1           float64
+coluna_extra2           float64
+pontuacao_credito        object
+geografia                object
+genero                   object
+idade                    object
+nome_completo            object
+classe                  float64
+dtype: object
+2025-02-26 15:11:29,802 - INFO - Número de linhas: 5369
+2025-02-26 15:11:29,802 - INFO - Número de colunas: 14
+2025-02-26 15:11:29,802 - INFO - Tipos de dados das colunas:
+2025-02-26 15:11:29,803 - INFO - tempo_relacionamento    float64
+saldo                   float64
+numero_produtos         float64
+cartao_credito          float64
+membro_ativo            float64
+salario_estimado        float64
+coluna_extra1           float64
+coluna_extra2           float64
+pontuacao_credito        object
+geografia                object
+genero                   object
+idade                    object
+nome_completo            object
+classe                  float64
+dtype: object
+2025-02-26 15:17:18,498 - INFO - Número de linhas: 5369
+2025-02-26 15:17:18,498 - INFO - Número de colunas: 14
+2025-02-26 15:17:18,498 - INFO - Tipos de dados das colunas:
+2025-02-26 15:17:18,499 - INFO - tempo_relacionamento    float64
+saldo                   float64
+numero_produtos         float64
+cartao_credito          float64
+membro_ativo            float64
+salario_estimado        float64
+coluna_extra1           float64
+coluna_extra2           float64
+pontuacao_credito        object
+geografia                object
+genero                   object
+idade                    object
+nome_completo            object
+classe                  float64
+dtype: object
+2025-02-26 15:17:18,526 - INFO - Estatísticas descritivas das variáveis numéricas:
+2025-02-26 15:17:18,538 - INFO -        tempo_relacionamento        saldo  numero_produtos  ...  coluna_extra1  coluna_extra2       classe
+count            5369.00000  5369.000000      5369.000000  ...    5369.000000         5369.0  5369.000000
+mean               36.17750     5.012107     72650.049172  ...  100749.287203            0.0     0.499721
+std                 8.08989     2.865795     63087.755608  ...   57703.186361            0.0     0.500046
+min                18.00000     0.000000         0.000000  ...      90.070000            0.0     0.000000
+25%                31.00000     3.000000         0.000000  ...   51407.127345            0.0     0.000000
+50%                36.00000     5.000000     91025.580000  ...  100750.030000            0.0     0.000000
+75%                41.00000     7.000000    126776.300000  ...  149991.320000            0.0     1.000000
+max                62.00000    10.000000    221532.800000  ...  199970.740000            0.0     1.000000
+
+[8 rows x 9 columns]
+2025-02-26 15:17:18,538 - INFO - Estatísticas descritivas das variáveis categóricas:
+2025-02-26 15:17:18,544 - INFO -        pontuacao_credito geografia  genero idade nome_completo
+count               5369      5369    5369  5369          5369
+unique              2114       442       3     2          5369
+top                  Yeh       850  France  Male    2 15647311
+freq                  17       122    2710  2928             1
+2025-02-26 15:17:22,321 - INFO - Taxa de Churn:
+2025-02-26 15:17:22,322 - INFO - 1.0    70.869808
+0.0    29.130192
+Name: membro_ativo, dtype: float64
+2025-02-26 15:17:22,324 - INFO - Fatores que podem influenciar o churn:
+2025-02-26 15:17:22,333 - INFO -               tempo_relacionamento     saldo  numero_produtos  ...  coluna_extra1  coluna_extra2    classe
+membro_ativo                                                   ...                                        
+0.0                      36.420716  4.900256     73673.492189  ...  102935.495925            0.0  0.512148
+1.0                      36.077530  5.058081     72229.375091  ...   99850.672107            0.0  0.494612
+
+[2 rows x 8 columns]
+2025-02-26 15:18:31,674 - INFO - Número de linhas: 5369
+2025-02-26 15:18:31,674 - INFO - Número de colunas: 14
+2025-02-26 15:18:31,674 - INFO - Tipos de dados das colunas:
+2025-02-26 15:18:31,675 - INFO - tempo_relacionamento    float64
+saldo                   float64
+numero_produtos         float64
+cartao_credito          float64
+membro_ativo            float64
+salario_estimado        float64
+coluna_extra1           float64
+coluna_extra2           float64
+pontuacao_credito        object
+geografia                object
+genero                   object
+idade                    object
+nome_completo            object
+classe                  float64
+dtype: object
+2025-02-26 15:18:31,701 - INFO - Estatísticas descritivas das variáveis numéricas:
+2025-02-26 15:18:31,711 - INFO -        tempo_relacionamento        saldo  numero_produtos  ...  coluna_extra1  coluna_extra2       classe
+count            5369.00000  5369.000000      5369.000000  ...    5369.000000         5369.0  5369.000000
+mean               36.17750     5.012107     72650.049172  ...  100749.287203            0.0     0.499721
+std                 8.08989     2.865795     63087.755608  ...   57703.186361            0.0     0.500046
+min                18.00000     0.000000         0.000000  ...      90.070000            0.0     0.000000
+25%                31.00000     3.000000         0.000000  ...   51407.127345            0.0     0.000000
+50%                36.00000     5.000000     91025.580000  ...  100750.030000            0.0     0.000000
+75%                41.00000     7.000000    126776.300000  ...  149991.320000            0.0     1.000000
+max                62.00000    10.000000    221532.800000  ...  199970.740000            0.0     1.000000
+
+[8 rows x 9 columns]
+2025-02-26 15:18:31,712 - INFO - Estatísticas descritivas das variáveis categóricas:
+2025-02-26 15:18:31,717 - INFO -        pontuacao_credito geografia  genero idade nome_completo
+count               5369      5369    5369  5369          5369
+unique              2114       442       3     2          5369
+top                  Yeh       850  France  Male    2 15647311
+freq                  17       122    2710  2928             1
+2025-02-26 15:18:34,128 - INFO - Taxa de Churn:
+2025-02-26 15:18:34,129 - INFO - 1.0    70.869808
+0.0    29.130192
+Name: membro_ativo, dtype: float64
+2025-02-26 15:18:34,130 - INFO - Fatores que podem influenciar o churn:
+2025-02-26 15:18:34,139 - INFO -               tempo_relacionamento     saldo  numero_produtos  ...  coluna_extra1  coluna_extra2    classe
+membro_ativo                                                   ...                                        
+0.0                      36.420716  4.900256     73673.492189  ...  102935.495925            0.0  0.512148
+1.0                      36.077530  5.058081     72229.375091  ...   99850.672107            0.0  0.494612
+
+[2 rows x 8 columns]
+2025-02-26 15:20:21,730 - INFO - Número de linhas: 5369
+2025-02-26 15:20:21,730 - INFO - Número de colunas: 14
+2025-02-26 15:20:21,730 - INFO - Tipos de dados das colunas:
+2025-02-26 15:20:21,731 - INFO - tempo_relacionamento    float64
+saldo                   float64
+numero_produtos         float64
+cartao_credito          float64
+membro_ativo            float64
+salario_estimado        float64
+coluna_extra1           float64
+coluna_extra2           float64
+pontuacao_credito        object
+geografia                object
+genero                   object
+idade                    object
+nome_completo            object
+classe                  float64
+dtype: object
+2025-02-26 15:20:21,760 - INFO - Estatísticas descritivas das variáveis numéricas:
+2025-02-26 15:20:21,772 - INFO -        tempo_relacionamento        saldo  numero_produtos  ...  coluna_extra1  coluna_extra2       classe
+count            5369.00000  5369.000000      5369.000000  ...    5369.000000         5369.0  5369.000000
+mean               36.17750     5.012107     72650.049172  ...  100749.287203            0.0     0.499721
+std                 8.08989     2.865795     63087.755608  ...   57703.186361            0.0     0.500046
+min                18.00000     0.000000         0.000000  ...      90.070000            0.0     0.000000
+25%                31.00000     3.000000         0.000000  ...   51407.127345            0.0     0.000000
+50%                36.00000     5.000000     91025.580000  ...  100750.030000            0.0     0.000000
+75%                41.00000     7.000000    126776.300000  ...  149991.320000            0.0     1.000000
+max                62.00000    10.000000    221532.800000  ...  199970.740000            0.0     1.000000
+
+[8 rows x 9 columns]
+2025-02-26 15:20:21,773 - INFO - Estatísticas descritivas das variáveis categóricas:
+2025-02-26 15:20:21,777 - INFO -        pontuacao_credito geografia  genero idade nome_completo
+count               5369      5369    5369  5369          5369
+unique              2114       442       3     2          5369
+top                  Yeh       850  France  Male    2 15647311
+freq                  17       122    2710  2928             1

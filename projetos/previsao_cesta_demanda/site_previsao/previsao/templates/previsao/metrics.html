@@ -1,0 +1,37 @@
+{% extends 'previsao/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="metrics-container">
+    <h2 class="page-title">📊 Desempenho do Modelo LightGBM</h2>
+    <p class="page-desc">Acompanhe abaixo as principais métricas de desempenho e a importância das variáveis no modelo.</p>
+
+    <!-- Cards de métricas -->
+    <div class="metrics-grid">
+        <div class="metric-card">
+            <h3>RMSE</h3>
+            <p>{{ metrics.RMSE|floatformat:3 }}</p>
+        </div>
+        <div class="metric-card">
+            <h3>MAE</h3>
+            <p>{{ metrics.MAE|floatformat:3 }}</p>
+        </div>
+        <div class="metric-card">
+            <h3>R²</h3>
+            <p>{{ metrics.R2|floatformat:3 }}</p>
+        </div>
+        <div class="metric-card">
+            <h3>MAPE</h3>
+            <p>{{ metrics.MAPE|floatformat:2 }}%</p>
+        </div>
+    </div>
+
+    <!-- Gráfico SHAP -->
+    <div class="chart-section">
+        <h3>🎯 Importância das Variáveis (SHAP)</h3>
+        <div class="chart-container">
+            {{ chart|safe }}
+        </div>
+    </div>
+</div>
+{% endblock %}

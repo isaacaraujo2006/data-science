@@ -1,0 +1,35 @@
+{% extends 'previsao/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="hero">
+    <h1 class="hero-title">Previsão de Demanda Inteligente</h1>
+    <p class="hero-subtitle">
+        Utilize algoritmos de <b>Machine Learning</b> para prever a demanda dos seus produtos
+        com precisão, confiabilidade e performance.
+    </p>
+    <div class="hero-buttons">
+        <a href="{% url 'manual' %}" class="btn-primary">Fazer Previsão Manual</a>
+        <a href="{% url 'metrics' %}" class="btn-secondary">Ver Métricas do Modelo</a>
+    </div>
+    
+    </div>
+</section>
+
+<section class="overview">
+    <div class="overview-item">
+        <h3>📦 Modelo LightGBM</h3>
+        <p>Modelo refinado com otimização de hiperparâmetros e validação cruzada temporal para previsões robustas.</p>
+    </div>
+
+    <div class="overview-item">
+        <h3>📊 Insights com SHAP</h3>
+        <p>Compreenda os fatores que mais impactam suas previsões com análises explicáveis e interpretáveis.</p>
+    </div>
+
+    <div class="overview-item">
+        <h3>⚙️ Previsão Manual</h3>
+        <p>Informe seus dados de produto e visualize instantaneamente as previsões e o faturamento estimado.</p>
+    </div>
+</section>
+{% endblock %}

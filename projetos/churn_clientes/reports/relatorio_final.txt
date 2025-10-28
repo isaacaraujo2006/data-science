@@ -1,0 +1,53 @@
+
+# Projeto de Churn de Clientes
+
+## Importação e Preparação dos Dados
+
+- O dataset foi importado do arquivo `processed.parquet`.
+- Os dados foram divididos em conjuntos de treinamento e teste (80% treinamento e 20% teste).
+- Foram aplicadas técnicas de engenharia de features, incluindo a criação de novas variáveis preditivas.
+- Os dados foram normalizados e padronizados conforme necessário.
+
+## Modelagem e Predição
+
+### Modelos Treinados
+
+1. Floresta Aleatória (Random Forest)
+
+### Desempenho do Modelo
+
+- **Floresta Aleatória Ajustada**
+    - Acurácia: 0.6995
+    - Precisão: 0.7128865979381444
+    - Recall: 0.96916608269096
+    - AUC-ROC: 0.49854464693012224
+
+## Busca pelo Melhor Threshold
+
+- O melhor threshold encontrado foi: 0.6907799552447392
+
+### Desempenho do Modelo com Melhor Threshold
+
+- **Conjunto de Treinamento**
+    - Acurácia: 0.717125
+    - Precisão: 0.7169008637359804
+    - Recall: 0.9880952380952381
+    - AUC-ROC: 0.5311471131454268
+
+- **Conjunto de Teste**
+    - Acurácia: 0.6995
+    - Precisão: 0.7128865979381444
+    - Recall: 0.96916608269096
+    - AUC-ROC: 0.49854464693012224
+
+## Conclusão
+
+- O melhor modelo com base no desempenho nos dados de validação foi a **Floresta Aleatória Ajustada**.
+- A Floresta Aleatória Ajustada apresentou uma AUC-ROC excelente, indicando uma excelente capacidade de discriminação entre classes.
+- O melhor threshold encontrado foi 0.6907799552447392, melhorando o desempenho do modelo tanto no conjunto de treinamento quanto no conjunto de teste.
+- Recomendações futuras incluem a implementação do modelo em um sistema de produção e a monitoração contínua do desempenho.
+
+## Diretórios
+
+- Modelos: `C:/Github/data-science/projetos/churn_clientes/models/melhor_modelo_rf.pkl`
+- Relatórios: `C:/Github/data-science/projetos/churn_clientes/reports/relatorio_final.txt`

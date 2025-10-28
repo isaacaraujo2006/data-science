@@ -1,0 +1,8 @@
+{
+    "tempo_execucao_min": 0.31,
+    "memoria_inicial_gb": 0.51,
+    "memoria_final_gb": 1.23,
+    "linhas": 4500000,
+    "colunas": 13,
+    "arquivos_gerados": 6
+}

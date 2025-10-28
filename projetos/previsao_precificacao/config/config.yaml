@@ -1,0 +1,42 @@
+# Configuração Inicial do Projeto de Precificação Dinâmica
+
+paths:
+  config_dir: "D:/github/github/data-science/projetos/previsao_precificacao/config/config.yaml"
+  logs_dir: "D:/github/github/data-science/projetos/previsao_precificacao/logs/"
+  notebook_dir: "D:/github/github/data-science/projetos/previsao_precificacao/notebook/"
+  src_dir: "D:/github/github/data-science/projetos/previsao_precificacao/src/"
+  figures_dir: "D:/github/github/data-science/projetos/previsao_precificacao/reports/figures"
+  reports_dir: "D:/github/github/data-science/projetos/previsao_precificacao/reports"
+
+models:
+  directory: "D:/github/github/data-science/projetos/previsao_precificacao/models"
+  final_model: "D:/github/github/data-science/projetos/previsao_precificacao/models/final_model.joblib"
+  versioned_models: "D:/github/github/data-science/projetos/previsao_precificacao/models/versioned/"
+
+preprocessors:
+  preprocessor_path: "D:/github/github/data-science/projetos/previsao_precificacao/preprocessors/preprocessor.joblib"
+  scaler_path: "D:/github/github/data-science/projetos/previsao_precificacao/preprocessors/scaler.joblib"
+
+data:
+  data:
+  raw: "D:/github/github/data-science/projetos/previsao_precificacao/data/raw/train.parquet"
+  processed_parquet: "D:/github/github/data-science/projetos/previsao_precificacao/data/processed/processed.parquet"
+
+logs:
+  file: "D:/github/github/data-science/projetos/previsao_precificacao/logs/data_processing.log"
+
+reports:
+  figures: "D:/github/github/data-science/projetos/previsao_precificacao/reports/figures/"
+
+metrics:
+  directory: "D:/github/github/data-science/projetos/previsao_precificacao/metrics"
+
+explainability:
+  shap_values: "D:/github/github/data-science/projetos/previsao_precificacao/reports/shap_values.csv"
+  shap_figures: "D:/github/github/data-science/projetos/previsao_precificacao/reports/figures/shap_summary.png"
+
+thresholds:
+  optimal_threshold_path: "D:/github/github/data-science/projetos/previsao_precificacao/models/optimal_threshold.txt"
+
+python:
+  version: "3.8"

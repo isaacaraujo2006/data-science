@@ -1,0 +1,17 @@
+{
+    "total_vendas": 4493660.5,
+    "media_venda_por_dia": 49929.5625,
+    "vendas_max_dia": 72938.828125,
+    "loja_mais_vende": 235,
+    "categoria_mais_vendida": 4,
+    "media_desconto": 0.9111412763595581,
+    "total_dias_unicos": 90,
+    "dias_com_atividade": 90,
+    "taxa_dias_com_atividade": 1.0,
+    "venda_media_por_loja": 0.9776825308799744,
+    "venda_media_por_categoria": 0.7378883957862854,
+    "temp_media": 22.27910804748535,
+    "umidade_media": 74.450439453125,
+    "precipitacao_total": 16642738.0,
+    "qtd_lojas": 898
+}

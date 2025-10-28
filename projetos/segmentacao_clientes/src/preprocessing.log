@@ -1,0 +1,27 @@
+2025-03-29 11:38:21,804 - INFO - Iniciando o pré-processamento dos dados.
+2025-03-29 11:38:21,813 - INFO - Número total de linhas no início: 2240
+2025-03-29 11:38:22,181 - INFO - Dataset processado salvo com sucesso nos formatos CSV e Parquet.
+2025-03-29 12:24:32,457 - INFO - Iniciando o pré-processamento dos dados.
+2025-03-29 12:24:32,481 - INFO - Número total de linhas no início: 2240
+2025-03-29 12:24:32,500 - WARNING - Categorias desconhecidas em 'educacao': {'2n Cycle', 'Graduação', 'Doutorado', 'Básico', 'Mestrado'}
+2025-03-29 12:24:32,500 - WARNING - Categorias desconhecidas em 'estado_civil': {'Solteiro(a)', 'YOLO', 'Widow', 'Absurd', 'Alone', 'Divorciado(a)', 'Casado(a)', 'Juntos'}
+2025-03-29 12:24:33,564 - INFO - Dataset processado salvo com sucesso nos formatos CSV e Parquet.
+2025-03-29 12:26:20,146 - INFO - Iniciando o pré-processamento dos dados.
+2025-03-29 12:26:20,155 - INFO - Número total de linhas no início: 2240
+2025-03-29 12:26:20,158 - WARNING - Categorias desconhecidas em 'educacao': {'Doutorado', 'Mestrado', 'Graduação', '2n Cycle', 'Básico'}
+2025-03-29 12:26:20,159 - WARNING - Categorias desconhecidas em 'estado_civil': {'Juntos', 'Absurd', 'Divorciado(a)', 'YOLO', 'Widow', 'Casado(a)', 'Solteiro(a)', 'Alone'}
+2025-03-29 12:26:20,338 - INFO - Dataset processado salvo com sucesso nos formatos CSV e Parquet.
+2025-03-29 12:27:21,487 - INFO - Iniciando o pré-processamento dos dados.
+2025-03-29 12:27:21,496 - INFO - Número total de linhas no início: 2240
+2025-03-29 12:27:21,500 - WARNING - Categorias desconhecidas em 'educacao': {'Graduação', 'Mestrado', 'Básico', '2n Cycle', 'Doutorado'}
+2025-03-29 12:27:21,500 - WARNING - Categorias desconhecidas em 'estado_civil': {'Widow', 'YOLO', 'Casado(a)', 'Juntos', 'Alone', 'Solteiro(a)', 'Absurd', 'Divorciado(a)'}
+2025-03-29 12:28:36,013 - INFO - Iniciando o pré-processamento dos dados.
+2025-03-29 12:28:36,024 - INFO - Número total de linhas no início: 2240
+2025-03-29 12:28:36,028 - WARNING - Categorias desconhecidas em 'educacao': {'Básico', 'Graduação', 'Mestrado', '2n Cycle', 'Doutorado'}
+2025-03-29 12:28:36,029 - WARNING - Categorias desconhecidas em 'estado_civil': {'YOLO', 'Absurd', 'Casado(a)', 'Juntos', 'Divorciado(a)', 'Solteiro(a)', 'Alone', 'Widow'}
+2025-03-29 12:28:36,192 - INFO - Dataset processado salvo com sucesso nos formatos CSV e Parquet.
+2025-03-29 18:06:12,354 - INFO - Iniciando o pré-processamento dos dados.
+2025-03-29 18:06:12,444 - INFO - Número total de linhas no início: 2240
+2025-03-29 18:06:12,470 - WARNING - Categorias desconhecidas em 'educacao': {'Graduação', 'Doutorado', 'Mestrado', '2n Cycle', 'Básico'}
+2025-03-29 18:06:12,470 - WARNING - Categorias desconhecidas em 'estado_civil': {'Juntos', 'Widow', 'Absurd', 'Divorciado(a)', 'Solteiro(a)', 'Alone', 'YOLO', 'Casado(a)'}
+2025-03-29 18:06:13,710 - INFO - Dataset processado salvo com sucesso nos formatos CSV e Parquet.

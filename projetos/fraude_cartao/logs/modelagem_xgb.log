@@ -1,0 +1,15 @@
+2025-07-29 11:56:37,021 - Melhores hiperparâmetros: {'xgb__subsample': 1.0, 'xgb__n_estimators': 100, 'xgb__max_depth': 5, 'xgb__learning_rate': 0.1, 'xgb__colsample_bytree': 0.8}
+2025-07-29 11:56:41,332 - Relatório de Classificação:
+              precision    recall  f1-score       support
+0              0.999524  0.999912  0.999718  56651.000000
+1              0.931507  0.715789  0.809524     95.000000
+accuracy       0.999436  0.999436  0.999436      0.999436
+macro avg      0.965515  0.857851  0.904621  56746.000000
+weighted avg   0.999410  0.999436  0.999399  56746.000000
+2025-07-29 11:56:41,332 - AUC-PR: 0.7842
+2025-07-29 11:56:41,332 - Matriz de Confusão:
+[[56646     5]
+ [   27    68]]
+2025-07-29 11:56:41,332 - Custo total: 275
+2025-07-29 11:58:27,941 - F1 Score médio (cross_val): 0.9985
+2025-07-29 12:02:54,344 - Tempo total: 0h 11min 44s

@@ -1,0 +1,41 @@
+# Configuração Inicial do Projeto de Churn de Clientes
+
+paths:
+  config_dir: "D:/github/data-science/projetos/previsao_cesta_demanda/config/config.yaml"
+  logs_dir: "D:/github/data-science/projetos/previsao_cesta_demanda/logs/"
+  notebook_dir: "D:/github/data-science/projetos/previsao_cesta_demanda/notebook/"
+  src_dir: "D:/github/data-science/projetos/previsao_cesta_demanda/src/"
+  figures_dir: "D:/github/data-science/projetos/previsao_cesta_demanda/reports/figures"
+  reports_dir: "D:/github/data-science/projetos/previsao_cesta_demanda/reports"
+
+models:
+  directory: "D:/github/data-science/projetos/previsao_cesta_demanda/models"
+  final_model: "D:/github/data-science/projetos/previsao_cesta_demanda/models/final_model.joblib"
+  versioned_models: "D:/github/data-science/projetos/previsao_cesta_demanda/models/versioned/"
+
+preprocessors:
+  preprocessor_path: "D:/github/data-science/projetos/previsao_cesta_demanda/preprocessors/preprocessor.joblib"
+  scaler_path: "D:/github/data-science/projetos/previsao_cesta_demanda/preprocessors/scaler.joblib"
+
+data:
+  raw: "D:/github/data-science/projetos/previsao_cesta_demanda/data/raw/previsao_cesta_demanda.parquet"
+  processed_parquet: "D:/github/data-science/projetos/previsao_cesta_demanda/data/processed/processed.parquet"
+
+logs:
+  file: "D:/github/data-science/projetos/previsao_cesta_demanda/logs/data_processing.log"
+
+reports:
+  figures: "D:/github/data-science/projetos/previsao_cesta_demanda/reports/figures/"
+
+metrics:
+  directory: "D:/github/data-science/projetos/previsao_cesta_demanda/metrics"
+
+explainability:
+  shap_values: "D:/github/data-science/projetos/previsao_cesta_demanda/reports/shap_values.csv"
+  shap_figures: "D:/github/data-science/projetos/previsao_cesta_demanda/reports/figures/shap_summary.png"
+
+thresholds:
+  optimal_threshold_path: "D:/github/data-science/projetos/previsao_cesta_demanda/models/optimal_threshold.txt"
+
+python:
+  version: "3.8"

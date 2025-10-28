@@ -1,0 +1,11 @@
+2025-03-14 15:40:30,227 - INFO - Carregando arquivo tratado: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.parquet
+2025-03-14 15:40:32,222 - INFO - Iniciando análise de sentimentos...
+2025-03-14 15:40:32,235 - ERROR - Erro ao inicializar o Hugging Face pipeline: 'module' object is not callable
+2025-03-14 15:40:32,236 - ERROR - Erro durante a análise de sentimentos: 'module' object is not callable
+2025-03-14 15:40:54,254 - INFO - Carregando arquivo tratado: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.parquet
+2025-03-14 15:40:55,884 - INFO - Iniciando análise de sentimentos...
+2025-03-14 15:40:55,895 - ERROR - Erro ao inicializar o Hugging Face pipeline: 'module' object is not callable
+2025-03-14 15:40:55,896 - ERROR - Erro durante a análise de sentimentos: 'module' object is not callable
+2025-03-14 15:43:18,158 - ERROR - Arquivo pipeline não encontrado no caminho especificado: C:/Github/data-science/projetos/analise_sentimento/src/01_pipeline.py.
+2025-03-14 17:15:38,666 - ERROR - Arquivo pipeline não encontrado no caminho especificado: C:/Github/data-science/projetos/analise_sentimento/src/01_pipeline.py.
+2025-03-14 17:17:48,548 - ERROR - Arquivo pipeline não encontrado no caminho especificado: C:/Github/data-science/projetos/analise_sentimento/src/01_pipeline.py.

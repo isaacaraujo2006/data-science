@@ -1,0 +1,5 @@
+* text eol=lf
+projetos/analise_sentimento/preprocessors/tfidf_features.npz filter=lfs diff=lfs merge=lfs -text
+projetos/analise_sentimento/models/modelo_sentimento.joblib filter=lfs diff=lfs merge=lfs -text
+*.joblib filter=lfs diff=lfs merge=lfs -text
+*.csv filter=lfs diff=lfs merge=lfs -text

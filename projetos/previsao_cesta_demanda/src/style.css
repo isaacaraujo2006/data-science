@@ -1,0 +1,155 @@
+/* ======== Tema Dark Roxo Premium - Isaac 2025 ======== */
+body {
+    background-color: #0e0e10;
+    color: #f2f2f2;
+    font-family: 'Inter', sans-serif;
+}
+
+/* --- Intro animada --- */
+.intro {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: #0e0e10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeOut 3s ease forwards;
+    z-index: 9999;
+}
+
+.intro-title {
+    font-size: 3rem;
+    color: #b388ff;
+    margin-bottom: 0.8rem;
+    animation: fadeIn 1.2s ease-in;
+    text-align: center;
+}
+
+.intro-sub {
+    font-size: 1.1rem;
+    color: #ccc;
+    animation: fadeIn 2s ease-in;
+    text-align: center;
+    line-height: 1.6;
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    80% {opacity: 0.9;}
+    100% {opacity: 0; visibility: hidden;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0; transform: translateY(10px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+/* --- Cabeçalho --- */
+.title {
+    text-align: center;
+    font-size: 2.6rem;
+    color: #b388ff;
+    margin-bottom: 0.1rem;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #bbb;
+    margin-top: -0.3rem;
+    letter-spacing: 1px;
+}
+
+.divider {
+    border: none;
+    border-top: 2px solid #7c4dff;
+    width: 60%;
+    margin: 1rem auto;
+}
+
+/* --- Tabs --- */
+.stTabs [data-baseweb="tab-list"] {
+    justify-content: center;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: #1a1a1d;
+    color: #ddd;
+    border-radius: 8px 8px 0 0;
+    font-weight: 600;
+    margin: 0 3px;
+    padding: 0.5rem 1rem;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+    background-color: #2a2a2d;
+    color: #b388ff;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #7c4dff;
+    color: #fff !important;
+}
+
+/* --- Botões --- */
+.stButton>button {
+    background-color: #7c4dff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(124, 77, 255, 0.4);
+}
+
+.stButton>button:hover {
+    background-color: #9b6dff;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(155, 109, 255, 0.6);
+}
+
+/* --- Resultados --- */
+.result-card {
+    text-align: center;
+    background-color: #1a1a1d;
+    border: 2px solid #7c4dff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    box-shadow: 0px 0px 10px rgba(124, 77, 255, 0.3);
+}
+
+/* --- Seção Bem-vindo --- */
+.welcome {
+    background-color: #151518;
+    border: 1px solid #2b2b2f;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0px 0px 15px rgba(124, 77, 255, 0.15);
+    margin: auto;
+    width: 85%;
+    text-align: justify;
+}
+
+.welcome h2 {
+    color: #b388ff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.welcome p, .welcome li {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #ddd;
+    text-align: justify;
+}
+
+.preview-title {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #b388ff;
+}

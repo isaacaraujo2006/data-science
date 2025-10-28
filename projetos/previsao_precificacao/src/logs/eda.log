@@ -1,0 +1,68 @@
+2025-10-20 15:37:21 [INFO] === INÍCIO DO PIPELINE DE EDA ===
+2025-10-20 15:37:21 [INFO] Lendo dataset processado de D:/github/github/data-science/projetos/previsao_precificacao/data/processed/processed.parquet
+2025-10-20 15:37:29 [INFO] Calculando KPIs principais...
+2025-10-20 15:37:30 [INFO] Gerando gráficos EDA...
+2025-10-20 15:41:11 [INFO] EDA concluída com sucesso.
+2025-10-20 15:51:37 [INFO] === INÍCIO DO PIPELINE DE EDA ===
+2025-10-20 15:51:37 [INFO] Lendo dataset processado de D:/github/github/data-science/projetos/previsao_precificacao/data/processed/processed.parquet
+2025-10-20 15:51:44 [INFO] Calculando KPIs principais...
+2025-10-20 15:51:45 [INFO] Detectando outliers...
+2025-10-20 15:51:48 [INFO] Gerando gráficos EDA...
+2025-10-20 16:21:22 [ERROR] Erro durante execução do EDA:
+Traceback (most recent call last):
+  File "C:\Users\isaac\AppData\Local\Programs\Python\Python38\lib\zipfile.py", line 1757, in write
+    shutil.copyfileobj(src, dest, 1024*8)
+  File "C:\Users\isaac\AppData\Local\Programs\Python\Python38\lib\shutil.py", line 205, in copyfileobj
+    fdst_write(buf)
+  File "C:\Users\isaac\AppData\Local\Programs\Python\Python38\lib\zipfile.py", line 1106, in write
+    self._fileobj.write(data)
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "EDA_KPIs.py", line 178, in <module>
+    zipf.write(full_path, arcname)
+  File "C:\Users\isaac\AppData\Local\Programs\Python\Python38\lib\zipfile.py", line 1757, in write
+    shutil.copyfileobj(src, dest, 1024*8)
+  File "C:\Users\isaac\AppData\Local\Programs\Python\Python38\lib\zipfile.py", line 1135, in close
+    raise RuntimeError(
+RuntimeError: File size unexpectedly exceeded ZIP64 limit
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\isaac\AppData\Local\Programs\Python\Python38\lib\zipfile.py", line 1819, in close
+    self.fp.seek(self.start_dir)
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "EDA_KPIs.py", line 178, in <module>
+    zipf.write(full_path, arcname)
+  File "C:\Users\isaac\AppData\Local\Programs\Python\Python38\lib\zipfile.py", line 1277, in __exit__
+    self.close()
+  File "C:\Users\isaac\AppData\Local\Programs\Python\Python38\lib\zipfile.py", line 1824, in close
+    self._fpclose(fp)
+  File "C:\Users\isaac\AppData\Local\Programs\Python\Python38\lib\zipfile.py", line 1932, in _fpclose
+    fp.close()
+OSError: [Errno 28] No space left on device
+2025-10-20 16:44:20 [INFO] === INÍCIO DO PIPELINE DE EDA ===
+2025-10-20 16:44:20 [INFO] Lendo dataset processado de D:/github/github/data-science/projetos/previsao_precificacao/data/processed/processed.parquet
+2025-10-20 16:44:27 [INFO] Calculando KPIs principais...
+2025-10-20 16:44:28 [INFO] Detectando outliers...
+2025-10-20 16:44:32 [INFO] Gerando gráficos EDA...
+2025-10-20 16:44:49 [INFO] EDA concluída com sucesso.
+2025-10-21 11:47:56 [INFO] === INÍCIO DO PIPELINE DE EDA ===
+2025-10-21 11:47:56 [INFO] Lendo dataset processado de D:/github/github/data-science/projetos/previsao_precificacao/data/processed/processed.parquet
+2025-10-21 11:47:58 [INFO] Calculando KPIs principais...
+2025-10-21 11:47:59 [INFO] Detectando outliers...
+2025-10-21 11:48:01 [INFO] Gerando gráficos EDA...
+2025-10-21 11:48:16 [INFO] EDA concluída com sucesso.
+2025-10-21 11:54:57 [INFO] === INÍCIO DO PIPELINE DE EDA ===
+2025-10-21 11:54:57 [INFO] Lendo dataset processado de D:/github/github/data-science/projetos/previsao_precificacao/data/processed/processed.parquet
+2025-10-21 11:54:59 [INFO] Calculando KPIs principais...
+2025-10-21 11:55:00 [INFO] Detectando outliers...
+2025-10-21 11:55:02 [INFO] Gerando gráficos EDA...
+2025-10-21 11:55:16 [INFO] EDA concluída com sucesso.

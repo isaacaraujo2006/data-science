@@ -1,0 +1,45 @@
+[
+    {
+        "modelo": "LightGBM",
+        "rmse": 0.7044635425612386,
+        "mae": 0.4199964193861742,
+        "r2": 0.7824919013539513,
+        "mape": 339354748.67585117,
+        "melhores_parametros": {
+            "num_leaves": 127,
+            "n_estimators": 500,
+            "min_child_samples": 20,
+            "learning_rate": 0.1,
+            "feature_fraction": 0.9
+        },
+        "tempo_min": 1.622769816716512
+    },
+    {
+        "modelo": "CatBoost",
+        "rmse": 0.726356939521235,
+        "mae": 0.43594887617792544,
+        "r2": 0.7687623392095176,
+        "mape": 360495558.478468,
+        "melhores_parametros": {
+            "learning_rate": 0.2,
+            "l2_leaf_reg": 7,
+            "iterations": 300,
+            "depth": 10
+        },
+        "tempo_min": 3.5464411616325378
+    },
+    {
+        "modelo": "RandomForest",
+        "rmse": 0.713482278775885,
+        "mae": 0.4125561440955032,
+        "r2": 0.7768870550364292,
+        "mape": 306491321.0562026,
+        "melhores_parametros": {
+            "n_estimators": 400,
+            "min_samples_split": 2,
+            "min_samples_leaf": 2,
+            "max_depth": 20
+        },
+        "tempo_min": 17.70639172792435
+    }
+]

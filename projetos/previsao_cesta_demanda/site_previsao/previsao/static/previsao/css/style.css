@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    background-color: #0b0b0f;
+    color: #eaeaea;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: #0e0e12;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1f1f25;
+}
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+}
+.logo span {
+    color: #b287ff;
+}
+.navbar nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.navbar nav a:hover {
+    color: #b287ff;
+}
+
+/* ================= HERO ================= */
+.hero {
+    text-align: center;
+    padding: 120px 20px 80px 20px;
+}
+.hero-title {
+    font-size: 3rem;
+    color: #b287ff;
+    font-weight: 700;
+}
+.hero-subtitle {
+    color: #ccc;
+    font-size: 1.1rem;
+    margin: 10px auto 40px;
+    max-width: 700px;
+    line-height: 1.6;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ================= BUTTONS ================= */
+.btn-primary, .btn-secondary, .btn-purple, .btn-success {
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.btn-primary {
+    background-color: #9b6bff;
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: #b287ff;
+}
+.btn-secondary {
+    border: 1px solid #9b6bff;
+    color: #9b6bff;
+}
+.btn-secondary:hover {
+    background-color: #9b6bff;
+    color: #fff;
+}
+.btn-purple {
+    background-color: #9b6bff;
+    border: none;
+    color: white;
+}
+.btn-purple:hover {
+    background-color: #b184ff;
+}
+.btn-success {
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+}
+.btn-success:hover {
+    background-color: #27ae60;
+}
+
+/* ================= OVERVIEW (cards) ================= */
+.overview {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 80px 20px;
+}
+.overview-item {
+    background: #14141a;
+    border-radius: 15px;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #24242a;
+    transition: 0.3s;
+}
+.overview-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(155, 107, 255, 0.3);
+}
+.overview-item h3 {
+    color: #b287ff;
+    margin-bottom: 10px;
+}
+
+/* ================= TITLES ================= */
+.page-title {
+    text-align: center;
+    color: #b287ff;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.page-desc {
+    text-align: center;
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* ================= FORM MANUAL ================= */
+.predict-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 420px;
+    margin: 0 auto;
+    background-color: #111015;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(155, 107, 255, 0.15);
+}
+.form-group {
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #d3d3d3;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #1b1a1f;
+    color: white;
+}
+.form-group input:focus {
+    outline: 1px solid #b287ff;
+}
+
+/* ================= RESULTADOS ================= */
+.result-card {
+    text-align: center;
+    background: #1a1a22;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 30px auto;
+    border: 1px solid #24242a;
+    max-width: 500px;
+    color: #eaeaea;
+}
+.result-card b {
+    color: #b287ff;
+}
+
+/* ================= AUTO PREDICT UPLOAD ================= */
+.upload-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+.upload-card {
+    width: 80%;
+    max-width: 900px;
+    background-color: #121212;
+    border: 1px solid #2e2e2e;
+    border-radius: 16px;
+    padding: 40px;
+    color: #eaeaea;
+    box-shadow: 0 0 20px rgba(155,107,255,0.25);
+    text-align: center;
+}
+.upload-card h2 {
+    color: #bb86fc;
+    margin-bottom: 15px;
+}
+.upload-card .file-input {
+    background-color: #1b1b1f;
+    border: 1px solid #444;
+    color: #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+.upload-card .file-info {
+    color: #a5a5a5;
+    font-style: italic;
+    margin-top: 10px;
+}
+.table-container {
+    overflow-x: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(155,107,255,0.2);
+}
+.table {
+    width: 100%;
+    text-align: center;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #1f1f25;
+    color: #aaa;
+    font-size: 0.95rem;
+}
+.footer b {
+    color: #b287ff;
+}
+
+/* ================= RESPONSIVIDADE ================= */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .hero-title {
+        font-size: 2.3rem;
+    }
+    .upload-card {
+        width: 95%;
+        padding: 25px;
+    }
+    .predict-form {
+        width: 90%;
+    }
+}
+
+/* ====== MÉTRICAS DO MODELO ====== */
+.metrics-container {
+    text-align: center;
+    padding: 60px 20px;
+    color: #eaeaea;
+}
+
+.metrics-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.metric-card {
+    background: #14141a;
+    border: 1px solid #24242a;
+    border-radius: 12px;
+    width: 180px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(155, 107, 255, 0.15);
+    transition: all 0.3s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(155, 107, 255, 0.3);
+}
+
+.metric-card h3 {
+    color: #b287ff;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.metric-card p {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.chart-section {
+    background: #0e0e12;
+    border: 1px solid #24242a;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 40px;
+    box-shadow: 0 0 25px rgba(155, 107, 255, 0.2);
+}
+
+.chart-section h3 {
+    color: #b287ff;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.chart-container {
+    width: 100%;
+    overflow-x: auto;
+}

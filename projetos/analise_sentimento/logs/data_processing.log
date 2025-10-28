@@ -1,0 +1,282 @@
+2025-03-14 14:58:42,040 - INFO - Carregando dataset...
+2025-03-14 14:58:46,086 - INFO - Colunas disponíveis no dataset: Index(['0', '1467810369', 'Mon Apr 06 22:19:45 PDT 2009', 'NO_QUERY',
+       '_TheSpecialOne_',
+       '@switchfoot http://twitpic.com/2y1zl - Awww, that's a bummer.  You shoulda got David Carr of Third Day to do it. ;D'],
+      dtype='object')
+2025-03-14 14:58:46,087 - INFO - Tempo de execução: carregar_dataset: 4.05 segundos
+2025-03-14 14:58:46,087 - INFO - Iniciando tratamento dos dados...
+2025-03-14 14:58:46,982 - INFO - Normalizando mensagens (paralelizado)...
+2025-03-14 15:01:02,443 - INFO - Dados processados salvos em: C:/Github/data-science/projetos/churn_clientes/data/processed/processed.csv e C:/Github/data-science/projetos/churn_clientes/data/processed/processed.parquet
+2025-03-14 15:01:02,444 - INFO - Tempo de execução: tratar_dados: 136.36 segundos
+2025-03-14 15:03:23,289 - INFO - Carregando dataset...
+2025-03-14 15:03:27,287 - INFO - Colunas disponíveis no dataset: Index(['0', '1467810369', 'Mon Apr 06 22:19:45 PDT 2009', 'NO_QUERY',
+       '_TheSpecialOne_',
+       '@switchfoot http://twitpic.com/2y1zl - Awww, that's a bummer.  You shoulda got David Carr of Third Day to do it. ;D'],
+      dtype='object')
+2025-03-14 15:03:27,287 - INFO - Tempo de execução: carregar_dataset: 4.00 segundos
+2025-03-14 15:03:27,288 - INFO - Iniciando tratamento dos dados...
+2025-03-14 15:03:28,157 - INFO - Normalizando mensagens (paralelizado)...
+2025-03-14 15:05:32,633 - INFO - Arquivo CSV salvo em: C:/Github/data-science/projetos/churn_clientes/data/processed/processed.csv
+2025-03-14 15:05:37,343 - INFO - Arquivo Parquet salvo em: C:/Github/data-science/projetos/churn_clientes/data/processed/processed.parquet
+2025-03-14 15:05:37,343 - INFO - Arquivos salvos com sucesso: C:/Github/data-science/projetos/churn_clientes/data/processed/processed.csv e C:/Github/data-science/projetos/churn_clientes/data/processed/processed.parquet
+2025-03-14 15:05:37,344 - INFO - Tempo de execução: tratar_dados: 130.06 segundos
+2025-03-14 15:09:01,563 - INFO - Carregando dataset...
+2025-03-14 15:09:05,494 - INFO - Colunas disponíveis no dataset: Index(['0', '1467810369', 'Mon Apr 06 22:19:45 PDT 2009', 'NO_QUERY',
+       '_TheSpecialOne_',
+       '@switchfoot http://twitpic.com/2y1zl - Awww, that's a bummer.  You shoulda got David Carr of Third Day to do it. ;D'],
+      dtype='object')
+2025-03-14 15:09:05,494 - INFO - Tempo de execução: carregar_dataset: 3.93 segundos
+2025-03-14 15:09:05,494 - INFO - Iniciando tratamento dos dados...
+2025-03-14 15:09:06,399 - INFO - Normalizando mensagens (paralelizado)...
+2025-03-14 15:11:16,881 - INFO - Arquivo CSV salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.csv
+2025-03-14 15:11:20,945 - INFO - Arquivo Parquet salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.parquet
+2025-03-14 15:11:20,978 - INFO - Arquivos salvos com sucesso: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.parquet
+2025-03-14 15:11:20,978 - INFO - Tempo de execução: tratar_dados: 135.48 segundos
+2025-03-15 12:03:12,966 - INFO - Iniciando o carregamento do dataset...
+2025-03-15 12:03:17,432 - INFO - Colunas disponíveis no dataset: ['0', '1467810369', 'Mon Apr 06 22:19:45 PDT 2009', 'NO_QUERY', '_TheSpecialOne_', "@switchfoot http://twitpic.com/2y1zl - Awww, that's a bummer.  You shoulda got David Carr of Third Day to do it. ;D"]
+2025-03-15 12:03:17,433 - INFO - Tempo de execução - carregar_dataset: 4.47 segundos
+2025-03-15 12:03:17,433 - INFO - Dataset carregado e colunas renomeadas com sucesso.
+2025-03-15 12:03:24,220 - INFO - Iniciando tratamento detalhado dos dados...
+2025-03-15 12:03:25,106 - INFO - Normalizando mensagens (paralelizado)...
+2025-03-15 12:05:07,313 - INFO - Criando novas features baseadas no texto...
+2025-03-15 12:05:10,769 - INFO - Calculando TF-IDF para as mensagens...
+2025-03-15 12:30:14,801 - INFO - Iniciando o carregamento do dataset...
+2025-03-15 12:30:19,325 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-15 12:30:19,351 - INFO - Tempo de execução - carregar_dataset: 4.55 segundos
+2025-03-15 12:30:19,351 - INFO - Carregamento e renomeação de colunas concluídos com sucesso.
+2025-03-15 12:30:27,441 - INFO - Carregando dataset para tratamento detalhado...
+2025-03-15 12:30:34,455 - INFO - Iniciando tratamento detalhado dos dados...
+2025-03-15 12:30:35,386 - INFO - Normalizando mensagens (em paralelo)...
+2025-03-15 12:33:24,536 - INFO - Criando novas features...
+2025-03-15 12:33:27,597 - INFO - Calculando TF-IDF...
+2025-03-15 12:34:38,984 - ERROR - Erro durante o processamento de dados na Etapa 2: Unable to allocate 3.34 GiB for an array with shape (300, 1494255) and data type float64
+2025-03-15 12:49:13,510 - INFO - Iniciando o carregamento do dataset...
+2025-03-15 12:49:17,918 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-15 12:49:17,935 - INFO - Tempo de execução - carregar_dataset: 4.43 segundos
+2025-03-15 12:49:17,935 - INFO - Carregamento e renomeação de colunas concluídos com sucesso.
+2025-03-15 12:49:26,852 - INFO - Carregando dataset para tratamento detalhado...
+2025-03-15 12:49:34,062 - INFO - Iniciando tratamento detalhado dos dados...
+2025-03-15 12:49:35,051 - INFO - Normalizando mensagens...
+2025-03-15 12:49:43,464 - INFO - Criando novas features...
+2025-03-15 12:49:53,364 - INFO - Calculando TF-IDF...
+2025-03-15 13:00:47,433 - INFO - Iniciando o carregamento do dataset...
+2025-03-15 13:00:51,637 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-15 13:00:51,684 - INFO - Tempo de execução - carregar_dataset: 4.25 segundos
+2025-03-15 13:00:51,684 - INFO - Carregamento e renomeação de colunas concluídos com sucesso.
+2025-03-15 13:01:02,427 - INFO - Carregando dataset para tratamento detalhado...
+2025-03-15 13:01:08,736 - INFO - Iniciando tratamento detalhado dos dados...
+2025-03-15 13:01:09,490 - INFO - Normalizando mensagens...
+2025-03-15 13:01:17,206 - INFO - Criando novas features...
+2025-03-15 13:01:38,849 - INFO - Dados salvos em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados_enriquecido.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados_enriquecido.parquet
+2025-03-15 13:01:38,849 - INFO - Tempo de execução - tratar_dados: 30.11 segundos
+2025-03-15 13:01:38,849 - INFO - Tratamento final concluído com sucesso!
+2025-03-15 13:27:50,584 - INFO - Iniciando o carregamento do dataset...
+2025-03-15 13:27:54,303 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-15 13:27:54,304 - INFO - Tempo de execução - carregar_dataset: 3.72 segundos
+2025-03-15 13:27:54,304 - INFO - Carregamento e renomeação de colunas concluídos com sucesso.
+2025-03-15 13:27:54,916 - ERROR - Erro durante o processamento de dados na Etapa 2: Arquivo não encontrado: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.csv. Certifique-se de que a Etapa 1 foi concluída.
+2025-03-15 13:28:25,979 - INFO - Iniciando o carregamento do dataset...
+2025-03-15 13:28:29,342 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-15 13:28:29,342 - INFO - Tempo de execução - carregar_dataset: 3.36 segundos
+2025-03-15 13:28:29,342 - INFO - Carregamento e renomeação de colunas concluídos com sucesso.
+2025-03-15 13:28:29,767 - ERROR - Erro durante o processamento de dados na Etapa 2: Arquivo não encontrado: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.csv. Certifique-se de que a Etapa 1 foi concluída.
+2025-03-15 13:30:12,496 - INFO - Iniciando o carregamento do dataset...
+2025-03-15 13:30:16,307 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-15 13:30:16,308 - INFO - Tempo de execução - carregar_dataset: 3.81 segundos
+2025-03-15 13:30:16,308 - INFO - Iniciando tratamento detalhado dos dados...
+2025-03-15 13:30:17,152 - INFO - Normalizando mensagens...
+2025-03-15 13:30:28,162 - INFO - Criando novas features...
+2025-03-15 13:30:52,101 - INFO - Dados salvos em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados_enriquecido.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados_enriquecido.parquet
+2025-03-15 13:30:52,102 - INFO - Tempo de execução - tratar_dados: 35.79 segundos
+2025-03-15 13:30:52,102 - INFO - Tratamento final concluído com sucesso!
+2025-03-15 13:59:26,655 - INFO - Iniciando o carregamento do dataset...
+2025-03-15 13:59:30,723 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-15 13:59:30,747 - INFO - Tempo de execução - carregar_dataset: 4.09 segundos
+2025-03-15 13:59:30,747 - INFO - Iniciando tratamento detalhado dos dados...
+2025-03-15 13:59:31,587 - INFO - Normalizando mensagens com lematização...
+2025-03-15 14:26:31,106 - INFO - Iniciando o carregamento do dataset...
+2025-03-15 14:26:34,643 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-15 14:26:34,644 - INFO - Tempo de execução - carregar_dataset: 3.54 segundos
+2025-03-15 14:26:34,644 - INFO - Carregamento e renomeação de colunas concluídos com sucesso.
+2025-03-15 14:26:40,985 - ERROR - Erro durante o processamento na Etapa 2: Arquivo não encontrado: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.csv. Certifique-se de que a Etapa 1 foi concluída.
+2025-03-15 14:26:57,434 - INFO - Carregando dataset tratado para análise...
+2025-03-15 14:27:02,010 - INFO - Dataset tratado carregado com sucesso: 1581465 linhas e 11 colunas.
+2025-03-15 14:27:02,010 - INFO - Tempo de execução - carregar_dados_tratados: 4.58 segundos
+2025-03-15 14:27:02,116 - INFO - Preparando dados para treino e teste...
+2025-03-15 14:27:02,354 - INFO - Aplicando balanceamento com SMOTE...
+2025-03-15 14:37:10,685 - INFO - Iniciando o carregamento do dataset...
+2025-03-15 14:37:14,648 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-15 14:37:29,034 - INFO - Dataset salvo com sucesso em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.parquet
+2025-03-15 14:37:29,034 - INFO - Tempo de execução - carregar_dataset: 18.35 segundos
+2025-03-15 14:37:29,034 - INFO - Carregamento, validação e salvamento inicial do dataset concluídos com sucesso.
+2025-03-15 14:37:35,678 - INFO - Carregando dataset para tratamento...
+2025-03-15 14:37:40,238 - INFO - Iniciando tratamento detalhado dos dados...
+2025-03-15 14:37:41,140 - INFO - Processando batch 0 até 50000...
+2025-03-15 14:43:31,003 - INFO - Batch salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_batch_0.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_batch_0.parquet
+2025-03-15 14:43:31,008 - INFO - Processando batch 50000 até 100000...
+2025-03-15 14:49:16,857 - INFO - Batch salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_batch_1.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_batch_1.parquet
+2025-03-15 14:49:16,859 - INFO - Processando batch 100000 até 150000...
+2025-03-15 14:52:43,221 - INFO - Iniciando o carregamento do dataset...
+2025-03-15 14:52:47,551 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-15 14:53:00,638 - INFO - Dataset salvo com sucesso em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.parquet
+2025-03-15 14:53:00,638 - INFO - Tempo de execução - carregar_dataset: 17.42 segundos
+2025-03-15 14:53:00,638 - INFO - Carregamento, validação e salvamento inicial do dataset concluídos com sucesso.
+2025-03-15 14:53:07,261 - INFO - Carregando dataset para tratamento...
+2025-03-15 14:53:11,849 - INFO - Iniciando tratamento detalhado dos dados...
+2025-03-15 14:53:15,839 - INFO - Processando batch 0 até 500000...
+2025-03-15 15:51:14,291 - INFO - Batch salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_batch_0.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_batch_0.parquet
+2025-03-15 15:51:14,357 - INFO - Processando batch 500000 até 1000000...
+2025-03-15 16:55:23,471 - INFO - Iniciando o carregamento do dataset...
+2025-03-15 16:55:32,274 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-15 16:56:28,713 - INFO - Dataset salvo com sucesso em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.parquet
+2025-03-15 16:56:28,713 - INFO - Tempo de execução - carregar_dataset: 65.24 segundos
+2025-03-15 16:56:28,714 - INFO - Carregamento, validação e salvamento inicial do dataset concluídos com sucesso.
+2025-03-15 16:57:00,322 - INFO - Iniciando o carregamento do dataset...
+2025-03-15 16:57:04,604 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-15 16:57:15,739 - INFO - Dataset salvo com sucesso em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.parquet
+2025-03-15 16:57:15,740 - INFO - Tempo de execução - carregar_dataset: 15.42 segundos
+2025-03-15 16:57:15,740 - INFO - Carregamento, validação e salvamento inicial do dataset concluídos com sucesso.
+2025-03-15 16:58:20,033 - INFO - Iniciando o carregamento do dataset...
+2025-03-15 16:58:23,709 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-15 16:58:36,255 - INFO - Dataset salvo com sucesso em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.parquet
+2025-03-15 16:58:36,255 - INFO - Tempo de execução - carregar_dataset: 16.22 segundos
+2025-03-15 16:58:36,255 - INFO - Carregamento, validação e salvamento inicial do dataset concluídos com sucesso.
+2025-03-15 16:59:13,204 - INFO - Iniciando o carregamento do dataset...
+2025-03-15 16:59:16,831 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-15 16:59:28,191 - INFO - Dataset salvo com sucesso em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.parquet
+2025-03-15 16:59:28,191 - INFO - Tempo de execução - carregar_dataset: 14.99 segundos
+2025-03-15 16:59:28,191 - INFO - Carregamento, validação e salvamento inicial do dataset concluídos com sucesso.
+2025-03-15 16:59:29,496 - INFO - Carregando dataset para tratamento...
+2025-03-15 16:59:34,026 - INFO - Iniciando tratamento detalhado dos dados...
+2025-03-15 16:59:34,884 - INFO - Processando batch 0 até 500000...
+2025-03-15 17:06:07,759 - INFO - Batch salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_batch_0.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_batch_0.parquet
+2025-03-15 17:06:07,793 - INFO - Processando batch 500000 até 1000000...
+2025-03-15 17:08:00,606 - INFO - Iniciando o carregamento do dataset...
+2025-03-15 17:08:04,085 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-15 17:08:04,085 - INFO - Colunas renomeadas com sucesso.
+2025-03-15 17:08:16,900 - INFO - Dataset salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.parquet
+2025-03-15 17:08:16,900 - INFO - Tempo de execução - carregar_dataset: 16.29 segundos
+2025-03-18 09:10:41,901 - INFO - Iniciando o carregamento do dataset...
+2025-03-18 09:10:47,706 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-18 09:10:47,803 - INFO - Colunas renomeadas com sucesso.
+2025-03-18 09:11:00,546 - INFO - Dataset salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.parquet
+2025-03-18 09:11:00,547 - INFO - Tempo de execução - carregar_dataset: 18.64 segundos
+2025-03-18 09:36:51,182 - INFO - Iniciando o carregamento do dataset...
+2025-03-18 09:36:57,042 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-18 09:36:57,044 - INFO - Colunas renomeadas com sucesso.
+2025-03-18 09:37:12,255 - INFO - Dataset salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_dados.parquet
+2025-03-18 09:37:12,255 - INFO - Tempo de execução - carregar_dataset: 21.07 segundos
+2025-03-18 11:20:56,734 - INFO - Iniciando o carregamento do dataset...
+2025-03-18 11:21:00,926 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-18 11:21:00,927 - INFO - Colunas renomeadas com sucesso.
+2025-03-18 11:21:00,927 - INFO - Tempo de execução - carregar_dataset: 4.19 segundos
+2025-03-18 11:21:00,928 - INFO - Criando features TF-IDF e adicionais.
+2025-03-18 11:21:28,786 - INFO - Preprocessador TF-IDF salvo em: C:/Github/data-science/projetos/analise_sentimento/preprocessors\tfidf_vectorizer.pkl
+2025-03-18 11:33:51,757 - INFO - Iniciando o carregamento do dataset...
+2025-03-18 11:33:56,793 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-18 11:33:56,831 - INFO - Colunas renomeadas com sucesso.
+2025-03-18 11:33:56,831 - INFO - Tempo de execução - carregar_dataset: 5.07 segundos
+2025-03-18 11:33:56,831 - INFO - Criando features TF-IDF e adicionais.
+2025-03-18 11:34:21,317 - INFO - Preprocessador TF-IDF salvo em: C:/Github/data-science/projetos/analise_sentimento/preprocessors\tfidf_vectorizer.pkl
+2025-03-18 13:14:38,272 - INFO - Iniciando o carregamento do dataset...
+2025-03-18 13:14:42,961 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-18 13:14:42,997 - INFO - Colunas renomeadas com sucesso.
+2025-03-18 13:14:42,997 - INFO - Tempo de execução - carregar_dataset: 4.72 segundos
+2025-03-18 13:14:42,999 - INFO - Criando features TF-IDF e adicionais.
+2025-03-18 13:15:12,627 - INFO - Preprocessador TF-IDF salvo em: C:/Github/data-science/projetos/analise_sentimento/preprocessors\tfidf_vectorizer.pkl
+2025-03-18 13:15:40,753 - INFO - Features combinadas salvas em formato esparso: C:/Github/data-science/projetos/analise_sentimento/data/processed\features_tfidf_combined.npz
+2025-03-18 13:15:40,828 - INFO - Tempo de execução - criar_features: 57.83 segundos
+2025-03-18 13:24:05,537 - INFO - Iniciando o carregamento do dataset...
+2025-03-18 13:24:09,482 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-18 13:24:09,483 - INFO - Colunas renomeadas com sucesso.
+2025-03-18 13:24:09,483 - INFO - Tempo de execução - carregar_dataset: 3.95 segundos
+2025-03-18 13:24:19,972 - INFO - Dataset salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.parquet
+2025-03-18 13:24:19,973 - INFO - Tempo de execução - salvar_dataset_inicial: 10.49 segundos
+2025-03-18 13:27:48,629 - INFO - Iniciando o carregamento do dataset...
+2025-03-18 13:27:53,118 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-18 13:27:53,119 - INFO - Colunas renomeadas com sucesso.
+2025-03-18 13:27:53,120 - INFO - Tempo de execução - carregar_dataset: 4.49 segundos
+2025-03-18 13:28:06,251 - INFO - Dataset salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.parquet
+2025-03-18 13:28:06,252 - INFO - Tempo de execução - salvar_dataset_inicial: 13.13 segundos
+2025-03-18 13:30:43,021 - INFO - Iniciando o carregamento do dataset...
+2025-03-18 13:30:47,257 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-18 13:30:47,258 - INFO - Colunas renomeadas com sucesso.
+2025-03-18 13:30:47,259 - INFO - Tempo de execução - carregar_dataset: 4.24 segundos
+2025-03-18 13:30:58,364 - INFO - Dataset salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.parquet
+2025-03-18 13:30:58,364 - INFO - Tempo de execução - salvar_dataset_inicial: 11.11 segundos
+2025-03-19 18:50:37,577 - INFO - Iniciando o carregamento do dataset...
+2025-03-19 18:50:42,759 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-19 18:50:42,818 - INFO - Colunas renomeadas com sucesso.
+2025-03-19 18:50:42,818 - INFO - Tempo de execução - carregar_dataset: 5.24 segundos
+2025-03-19 18:50:58,210 - INFO - Dataset salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.parquet
+2025-03-19 18:50:58,210 - INFO - Tempo de execução - salvar_dataset_inicial: 15.39 segundos
+2025-03-19 19:01:45,575 - INFO - Iniciando o carregamento do dataset...
+2025-03-19 19:01:49,794 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-19 19:01:49,823 - INFO - Colunas renomeadas com sucesso.
+2025-03-19 19:01:49,823 - INFO - Tempo de execução - carregar_dataset: 4.25 segundos
+2025-03-19 19:02:06,297 - INFO - Dataset salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.parquet
+2025-03-19 19:02:06,298 - INFO - Tempo de execução - salvar_dataset_inicial: 16.47 segundos
+2025-03-19 19:22:03,850 - INFO - Iniciando o carregamento do dataset...
+2025-03-19 19:22:08,490 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-19 19:22:08,490 - INFO - Colunas renomeadas com sucesso.
+2025-03-19 19:22:08,490 - INFO - Tempo de execução - carregar_dataset: 4.64 segundos
+2025-03-19 19:22:20,520 - INFO - Dataset salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.parquet
+2025-03-19 19:22:20,520 - INFO - Tempo de execução - salvar_dataset_inicial: 12.03 segundos
+2025-03-19 19:39:50,088 - INFO - Iniciando o carregamento do dataset...
+2025-03-19 19:39:54,940 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-19 19:39:54,977 - INFO - Colunas renomeadas com sucesso.
+2025-03-19 19:39:54,977 - INFO - Tempo de execução - carregar_dataset: 4.89 segundos
+2025-03-19 19:40:12,558 - INFO - Dataset salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.parquet
+2025-03-19 19:40:12,559 - INFO - Tempo de execução - salvar_dataset_inicial: 17.58 segundos
+2025-03-20 13:33:33,971 - INFO - Iniciando o carregamento do dataset...
+2025-03-20 13:33:37,893 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-20 13:33:37,894 - INFO - Colunas renomeadas com sucesso.
+2025-03-20 13:33:38,223 - INFO - Tempo de execução - carregar_dataset: 4.25 segundos
+2025-03-20 13:33:49,551 - INFO - Dataset salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.parquet
+2025-03-20 13:33:49,551 - INFO - Tempo de execução - salvar_dataset_inicial: 11.33 segundos
+2025-03-20 16:16:57,860 - INFO - Iniciando o carregamento do dataset...
+2025-03-20 16:17:02,459 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-20 16:17:02,476 - INFO - Colunas renomeadas com sucesso.
+2025-03-20 16:19:04,261 - INFO - Tempo de execução - carregar_dataset: 126.40 segundos
+2025-03-20 16:19:18,343 - INFO - Dataset salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.parquet
+2025-03-20 16:19:18,343 - INFO - Tempo de execução - salvar_dataset_inicial: 14.08 segundos
+2025-03-21 09:41:02,166 - INFO - Iniciando o carregamento do dataset...
+2025-03-21 09:41:06,897 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-21 09:41:06,917 - INFO - Colunas renomeadas com sucesso.
+2025-03-21 09:43:00,682 - INFO - Tempo de execução - carregar_dataset: 118.52 segundos
+2025-03-21 09:43:19,378 - INFO - Dataset salvo em: C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.csv e C:/Github/data-science/projetos/analise_sentimento/data/processed\tratamento_inicial.parquet
+2025-03-21 09:43:19,378 - INFO - Tempo de execução - salvar_dataset_inicial: 18.70 segundos
+2025-03-21 10:32:12,223 - INFO - Carregando o dataset...
+2025-03-21 10:32:17,311 - ERROR - Erro ao carregar o dataset: "Coluna 'mensagem' não encontrada no dataset."
+2025-03-21 10:32:17,311 - ERROR - Erro no processamento principal: "Coluna 'mensagem' não encontrada no dataset."
+2025-03-21 10:34:21,429 - ERROR - Erro ao carregar o dataset: "Coluna 'mensagem' não encontrada no dataset."
+2025-03-21 10:34:21,430 - ERROR - Erro no processamento: "Coluna 'mensagem' não encontrada no dataset."
+2025-03-21 10:44:54,776 - ERROR - Dictionary file not found at frequency_dictionary_en_82_765.txt.
+2025-03-21 10:44:54,795 - ERROR - Bigram dictionary file not found at frequency_bigramdictionary_en_243_342.txt.
+2025-03-21 10:47:32,535 - ERROR - Dictionary file not found at C:\seu_caminho\frequency_dictionary_en_82_765.txt.
+2025-03-21 10:47:32,536 - ERROR - Bigram dictionary file not found at C:\seu_caminho\frequency_bigramdictionary_en_243_342.txt.
+2025-03-21 11:04:39,173 - ERROR - Erro ao carregar o dataset: 'tweet'
+2025-03-21 11:04:39,192 - ERROR - Erro no processamento: 'tweet'
+2025-03-21 11:07:39,725 - ERROR - Erro ao carregar o dataset: 'tweet'
+2025-03-21 11:07:39,725 - ERROR - Erro no processamento: 'tweet'
+2025-03-21 11:07:53,253 - ERROR - Erro ao carregar o dataset: 'tweet'
+2025-03-21 11:07:53,253 - ERROR - Erro no processamento: 'tweet'
+2025-03-21 11:11:11,066 - INFO - Dataset carregado com sucesso: 1599999 linhas e 6 colunas.
+2025-03-21 11:11:11,067 - ERROR - Erro ao carregar o dataset: 'tweet'
+2025-03-21 11:11:11,067 - ERROR - Erro no processamento: 'tweet'
+2025-03-21 11:13:29,268 - ERROR - Erro ao carregar o dataset: 'tweet'
+2025-03-21 11:13:29,269 - ERROR - Erro no processamento: 'tweet'
+2025-03-21 11:19:12,221 - ERROR - Erro ao carregar o dataset: 'tweet'
+2025-03-21 11:19:12,222 - ERROR - Erro no processamento: 'tweet'
+2025-03-21 11:20:55,823 - ERROR - Erro ao carregar o dataset: name 'dicionario_girias' is not defined
+2025-03-21 11:20:55,825 - ERROR - Erro no processamento: name 'dicionario_girias' is not defined
+2025-03-21 11:25:44,272 - ERROR - Erro ao carregar o dataset: 'set' object has no attribute 'get'
+2025-03-21 11:25:44,273 - ERROR - Erro no processamento: 'set' object has no attribute 'get'
+2025-03-21 11:40:38,756 - INFO - Tempo de execução - gerar_amostra: 2.88 segundos
+2025-03-21 11:42:36,054 - ERROR - Erro ao carregar o dataset: Dataset não encontrado no caminho especificado: C:\Github\data-science\projetosnalise_sentimento\dataaw\impuromostra_asentimentos.parquet
+2025-03-21 11:42:36,055 - ERROR - Erro no processamento: Dataset não encontrado no caminho especificado: C:\Github\data-science\projetosnalise_sentimento\dataaw\impuromostra_asentimentos.parquet
+2025-03-21 12:30:07,176 - INFO - Tempo de execução - carregar_dataset: 1853.48 segundos
+2025-03-21 12:30:11,099 - INFO - Tempo de execução - salvar_dataset: 3.92 segundos
+2025-03-21 13:11:26,673 - ERROR - Erro no pipeline: name 'dicionario_girias' is not defined
+2025-03-21 13:31:46,047 - INFO - Tempo de execução - carregar_dataset: 1081.11 segundos
+2025-03-21 13:31:48,426 - INFO - Tempo de execução - salvar_dataset: 2.38 segundos

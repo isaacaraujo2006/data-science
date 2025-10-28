@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão de Demanda</title>
+    <link rel="stylesheet" href="{% static 'previsao/css/style.css' %}">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Previsão <span>Demanda</span></div>
+        <nav>
+            <a href="{% url 'index' %}">Início</a>
+            <a href="{% url 'manual' %}">Previsão Manual</a>
+            <a href="{% url 'metrics' %}">Métricas</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        Desenvolvido por <b>Isaac Araújo</b> • Cientista de Dados
+    </footer>
+</body>
+</html>

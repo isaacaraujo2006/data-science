@@ -1,0 +1,130 @@
+-- 1. Distribuição por faixa de idade
+SELECT
+  CASE
+    WHEN idade < 25 THEN '<25'
+    WHEN idade BETWEEN 25 AND 34 THEN '25-34'
+    WHEN idade BETWEEN 35 AND 44 THEN '35-44'
+    WHEN idade BETWEEN 45 AND 54 THEN '45-54'
+    ELSE '55+'
+  END AS faixa_idade,
+  COUNT(*) AS qtd_clientes
+FROM risco_credito
+GROUP BY faixa_idade
+ORDER BY faixa_idade;
+
+-- 2. Proporção de inadimplentes por sexo
+SELECT
+  sexo,
+  ROUND(AVG(CAST(inadimplente_mes_seguinte AS FLOAT)), 3) AS prop_inadimplentes
+FROM risco_credito
+GROUP BY sexo;
+
+-- 3. Média do limite de crédito por situação de inadimplência
+SELECT
+  inadimplente_mes_seguinte,
+  AVG(limite_credito) AS media_limite
+FROM risco_credito
+GROUP BY inadimplente_mes_seguinte;
+
+-- 4. Inadimplência por estado civil
+SELECT estado_civil, COUNT(*) AS qtd
+FROM risco_credito
+WHERE inadimplente_mes_seguinte = 1
+GROUP BY estado_civil
+ORDER BY qtd DESC
+LIMIT 10;
+
+-- 5. Inadimplência por educação
+SELECT
+  educacao,
+  ROUND(AVG(CAST(inadimplente_mes_seguinte AS FLOAT)), 3) AS prop_inadimplentes
+FROM risco_credito
+GROUP BY educacao;
+
+-- 6. Idade média por situação
+SELECT
+  inadimplente_mes_seguinte,
+  AVG(idade) AS idade_media
+FROM risco_credito
+GROUP BY inadimplente_mes_seguinte;
+
+-- 7. Faixas de limite de crédito entre inadimplentes
+SELECT
+  CASE
+    WHEN limite_credito < 50000 THEN '<50k'
+    WHEN limite_credito BETWEEN 50000 AND 100000 THEN '50k-100k'
+    WHEN limite_credito BETWEEN 100001 AND 200000 THEN '100k-200k'
+    ELSE '>200k'
+  END AS faixa_limite,
+  COUNT(*) AS qtd_inadimplentes
+FROM risco_credito
+WHERE inadimplente_mes_seguinte = 1
+GROUP BY faixa_limite
+ORDER BY qtd_inadimplentes DESC;
+
+-- 8. Proporção de inadimplentes por estado civil
+SELECT
+  estado_civil,
+  ROUND(AVG(CAST(inadimplente_mes_seguinte AS FLOAT)), 3) AS prop_inadimplentes
+FROM risco_credito
+GROUP BY estado_civil;
+
+-- 9. Top 10 maiores faturas no último mês
+SELECT id, fatura_mes_6, inadimplente_mes_seguinte
+FROM risco_credito
+ORDER BY fatura_mes_6 DESC
+LIMIT 10;
+
+-- 10. Atraso no pagamento vs inadimplência
+SELECT
+  pagamento_mes_0,
+  ROUND(AVG(CAST(inadimplente_mes_seguinte AS FLOAT)), 3) AS prop_inadimplentes
+FROM risco_credito
+GROUP BY pagamento_mes_0
+ORDER BY pagamento_mes_0;
+
+-- 11. Inadimplência por valor pago no último mês
+SELECT
+  CASE
+    WHEN pagamento_mes_1 = 0 THEN '0'
+    WHEN pagamento_mes_1 BETWEEN 1 AND 2 THEN '1-2'
+    WHEN pagamento_mes_1 BETWEEN 3 AND 8 THEN '3-8'
+    ELSE '>8'
+  END AS faixa_pagto,
+  ROUND(AVG(CAST(inadimplente_mes_seguinte AS FLOAT)), 3) AS prop_inadimplentes
+FROM risco_credito
+GROUP BY faixa_pagto
+ORDER BY faixa_pagto;
+
+-- 12. Clientes com piora no atraso (detecção de deterioração)
+SELECT id, pagamento_mes_0, pagamento_mes_2, pagamento_mes_4, inadimplente_mes_seguinte
+FROM risco_credito
+WHERE pagamento_mes_0 > pagamento_mes_2 AND pagamento_mes_2 > pagamento_mes_4;
+
+-- 13. Inadimplentes por faixa etária
+SELECT
+  CASE
+    WHEN idade < 25 THEN '<25'
+    WHEN idade BETWEEN 25 AND 34 THEN '25-34'
+    WHEN idade BETWEEN 35 AND 44 THEN '35-44'
+    WHEN idade BETWEEN 45 AND 54 THEN '45-54'
+    ELSE '55+'
+  END AS faixa_idade,
+  SUM(CASE WHEN inadimplente_mes_seguinte = 1 THEN 1 ELSE 0 END) AS qtd_inadimplentes
+FROM risco_credito
+GROUP BY faixa_idade
+ORDER BY faixa_idade;
+
+-- 14. Média de fatura de inadimplentes vs não inadimplentes
+SELECT
+  inadimplente_mes_seguinte,
+  AVG(fatura_mes_1) AS media_fatura_1,
+  AVG(fatura_mes_6) AS media_fatura_6
+FROM risco_credito
+GROUP BY inadimplente_mes_seguinte;
+
+-- 15. Top 10 clientes com mais somatório de atrasos (últimos 6 meses)
+SELECT id, (pagamento_mes_0 + pagamento_mes_2 + pagamento_mes_3 + pagamento_mes_4 + pagamento_mes_5 + pagamento_mes_6) AS total_atrasos
+FROM risco_credito
+ORDER BY total_atrasos DESC
+LIMIT 10;

@@ -1,0 +1,43 @@
+# Configuração Inicial do Projeto de Churn de Clientes
+
+paths:
+  config_dir: "D:/github/data-science/projetos/fraude_cartao/config/config.yaml"
+  logs_dir: "D:/github/data-science/projetos/fraude_cartao/logs/"
+  notebook_dir: "D:/github/data-science/projetos/fraude_cartao/notebook/"
+  src_dir: "D:/github/data-science/projetos/fraude_cartao/src/"
+  figures_dir: "D:/github/data-science/projetos/fraude_cartao/reports/figures"
+
+models:
+  directory: "D:/github/data-science/projetos/fraude_cartao/models"
+  final_model: "D:/github/data-science/projetos/fraude_cartao/models/final_model.joblib"
+  versioned_models: "D:/github/data-science/projetos/fraude_cartao/models/versioned/"
+
+preprocessors:
+  preprocessor_path: "D:/github/data-science/projetos/fraude_cartao/preprocessors/preprocessor.joblib"
+  scaler_path: "D:/github/data-science/projetos/fraude_cartao/preprocessors/scaler.joblib"
+
+data:
+  raw: "D:/github/data-science/projetos/fraude_cartao/data/raw/creditcard.csv"
+  processed_csv: "D:/github/data-science/projetos/fraude_cartao/data/processed/processed.csv"
+  processed_parquet: "D:/github/data-science/projetos/fraude_cartao/data/processed/processed.parquet"
+
+logs:
+  file: "D:/github/data-science/projetos/fraude_cartao/logs/data_processing.log"
+
+reports:
+  figures: "D:/github/data-science/projetos/fraude_cartao/reports/figures/"
+
+metrics:
+  directory: "D:/github/data-science/projetos/fraude_cartao/metrics"
+
+explainability:
+  shap_values: "D:/github/data-science/projetos/fraude_cartao/reports/shap_values.csv"
+  shap_figures: "D:/github/data-science/projetos/fraude_cartao/reports/figures/shap_summary.png"
+
+thresholds:
+  optimal_threshold_path: "D:/github/data-science/projetos/fraude_cartao/models/optimal_threshold.txt"
+
+
+# Requisitos do Ambiente
+python:
+  version: "3.8"
